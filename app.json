@@ -20,19 +20,19 @@
         "selectedIconPath": "assets/images/home_active.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/personal/personal",
         "text": "个性",
         "iconPath": "assets/images/personality.png",
         "selectedIconPath": "assets/images/personality_active.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/activity/activity",
         "text": "活动",
         "iconPath": "assets/images/activity.png",
         "selectedIconPath": "assets/images/activity_active.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/me/me",
         "text": "我",
         "iconPath": "assets/images/me.png",
         "selectedIconPath": "assets/images/me_active.png"
