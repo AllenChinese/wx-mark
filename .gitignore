@@ -1,0 +1,9 @@
+*.a
+.idea/
+run/
+.DS_Store
+*.sw*
+*.un~
+node_modules/
+package-lock.json
+.vscode
