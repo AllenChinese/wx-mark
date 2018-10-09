@@ -1,6 +1,9 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/activity/activity",
+    "pages/me/me"
   ],
   "window": {
     "backgroundTextStyle": "light",
