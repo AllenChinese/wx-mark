@@ -8,4 +8,15 @@
       </block>
     </swiper>
   </view>
+  <!-- 个性选择 -->
+  <view class="personal-choose-area">
+    <view class="personal-choose w100h35">友情</view>
+    <view class="personal-choose w180h35">骚话</view>
+    <view class="personal-choose w240h35">爱情</view>
+    <view class="personal-choose w100h35">古典</view>
+    <view class="personal-choose w240h35">名言</view>
+    <view class="personal-choose w180h35">宇宙</view>
+    <view class="personal-choose w240h35">莎士比亚</view>
+    <view class="personal-choose w180h35">文学</view>
+  </view>
 </view>
