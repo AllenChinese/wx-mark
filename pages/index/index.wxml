@@ -18,5 +18,8 @@
     <view class="personal-choose w180h35">宇宙</view>
     <view class="personal-choose w240h35">莎士比亚</view>
     <view class="personal-choose w180h35">文学</view>
+    <view class="personal-choose w240h35">韩寒</view>
+    <view class="personal-choose w240h35">程序员</view>
+    <view class="personal-choose w240h35">1024</view>
   </view>
 </view>
