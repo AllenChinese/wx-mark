@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/personal/personal",
     "pages/activity/activity",
     "pages/me/me"
   ],
@@ -15,19 +14,13 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
+        "text": "活动搜索",
         "iconPath": "assets/images/home.png",
         "selectedIconPath": "assets/images/home_active.png"
       },
       {
-        "pagePath": "pages/personal/personal",
-        "text": "个性",
-        "iconPath": "assets/images/personality.png",
-        "selectedIconPath": "assets/images/personality_active.png"
-      },
-      {
         "pagePath": "pages/activity/activity",
-        "text": "活动",
+        "text": "我的活动",
         "iconPath": "assets/images/activity.png",
         "selectedIconPath": "assets/images/activity_active.png"
       },
