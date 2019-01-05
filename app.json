@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/me/me",
     "pages/index/index",
-    "pages/activity/activity",
-    "pages/me/me"
+    "pages/activity/activity"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,7 +26,7 @@
       },
       {
         "pagePath": "pages/me/me",
-        "text": "我",
+        "text": "我的空间",
         "iconPath": "assets/images/me.png",
         "selectedIconPath": "assets/images/me_active.png"
       }

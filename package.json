@@ -1,0 +1,11 @@
+{
+  "name": "wx-mark",
+  "version": "1.0.0",
+  "description": "",
+  "miniprogram": "dist",
+  "main": "app.js",
+  "devDependencies": {},
+  "dependencies": {
+    "vant-weapp": "^0.5.0-beta2"
+  }
+}

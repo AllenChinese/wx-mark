@@ -1,5 +1,4 @@
 // app.js
-
 App({
   onlaunch: function () {
     // 展示本地缓存能力

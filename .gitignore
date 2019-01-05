@@ -7,3 +7,4 @@ run/
 node_modules/
 package-lock.json
 .vscode
+miniprogram_npm/
