@@ -1,3 +1,13 @@
 .no-border {
   border: none !important;
 }
+
+/* margin */
+
+.margin-bottom-30 {
+  margin-bottom: 60rpx;
+}
+
+.margin-top-30 {
+  margin-top: 60rpx;
+}

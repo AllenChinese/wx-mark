@@ -34,3 +34,32 @@
   border-right: 1px solid #b2b2b2;
   border-bottom: 1px solid #b2b2b2;
 }
+
+.second-cell {
+  transform: translateY(60rpx);
+  -webkit-transform: translateY(60rpx);
+  -moz-transform: translateY(60rpx);
+  -ms-transform: translateY(60rpx);
+  -o-transform: translateY(60rpx);
+}
+
+.mePage__conpany-part {
+  position: relative;
+  margin: 150rpx auto 0;
+  width: 220rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #b2b2b2;
+  background-color: #fff;
+}
+
+.mePage__conpany-part::before {
+  z-index: -1;
+  position: absolute;
+  content: " ";
+  top: 20rpx;
+  left: -40rpx;
+  width: 300rpx;
+  height: 2rpx;
+  background-color: #000;
+}
