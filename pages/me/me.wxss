@@ -1,1 +1,36 @@
 /* pages/me/me.wxss */
+
+.mePage__container {}
+
+/* 用户信息 */
+
+.mePage__userMsg-part {
+  height: 200rpx;
+  line-height: 200rpx;
+  font-size: 28rpx;
+  background-color: bisque;
+}
+
+.mePage__person-img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 150rpx;
+  height: 150rpx;
+  vertical-align: middle;
+}
+
+.mePage__function-part {
+  border: 1px solid #b2b2b2;
+  height: 200rpx;
+  line-height: 200rpx;
+  font-size: 28rpx;
+}
+
+.mePage__function-item {
+  text-align: center;
+  border-right: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+}

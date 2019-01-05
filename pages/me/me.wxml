@@ -1,2 +1,42 @@
 <!-- pages/me/me.wxml -->
-<van-button type="primary">按钮</van-button>
+<view class="mePage__container">
+  <!-- mePage__userMsg -->
+  <view class="mePage__userMsg-part">
+    <van-row>
+      <van-col span="6" offset="2">
+        <image class="mePage__person-img" mode src="../../assets/images/cat.jpeg"></image>
+      </van-col>
+      <van-col span="8">
+        <view>
+          <text>清风少年风清扬</text>
+        </view>
+      </van-col>
+      <van-col span="8">
+        <view>
+          <text decode="{{true}}">等级:&nbsp;</text>
+          <text>party 大师</text>
+        </view>
+      </van-col>
+    </van-row>
+  </view>
+  <!-- mePage__userMsg -->
+  <view class="mePage__function-part">
+    <van-row>
+      <van-col span="8">
+        <view class="mePage__function-item">
+          <text>全部活动</text>
+        </view>
+      </van-col>
+      <van-col span="8">
+        <view class="mePage__function-item">
+          <text>发起活动</text>
+        </view>
+      </van-col>
+      <van-col span="8">
+        <view class="mePage__function-item no-border">
+          <text>等级排行</text>
+        </view>
+      </van-col>
+    </van-row>
+  </view>
+</view>
