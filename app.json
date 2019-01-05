@@ -2,7 +2,8 @@
   "pages": [
     "pages/me/me",
     "pages/index/index",
-    "pages/activity/activity"
+    "pages/activity/activity",
+    "pages/city/city"
   ],
   "window": {
     "backgroundTextStyle": "light",
