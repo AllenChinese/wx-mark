@@ -43,7 +43,7 @@
   <view class="mePage__cell-part">
     <van-cell-group>
       <van-cell icon="star-o" title="活动收藏" value="内容" is-link />
-      <van-cell icon="point-gift-o" title="活动心愿池" value="内容" border="{{ false }}" is-link />
+      <van-cell border="{{ false }}" icon="point-gift-o" title="活动心愿池" value="内容" border="{{ false }}" is-link />
     </van-cell-group>
     <van-cell-group custom-class="second-cell">
       <van-cell value="内容" icon="edit" is-link>
@@ -52,7 +52,7 @@
           <van-tag color="#a061ff">加分</van-tag>
         </view>
       </van-cell>
-      <van-cell icon="question-o" title="常见问题" value="内容" border="{{ false }}" is-link />
+      <van-cell border="{{ false }}" icon="question-o" title="常见问题" value="内容" border="{{ false }}" is-link />
     </van-cell-group>
   </view>
   <!-- mePage__conpany-part -->

@@ -14,7 +14,8 @@ Page({
     indicatorDots: false,
     autoplay: true,
     interval: 3000,
-    duration: 1000
+    duration: 1000,
+    searchValue: ''
   },
 
   /**
@@ -80,5 +81,12 @@ Page({
     wx.navigateTo({
       url: '/pages/city/city'
     })
+  },
+
+  /**
+   * 搜索活动事件
+   */
+  searchOnChange() {
+
   }
 })

@@ -1,30 +1,42 @@
 /**index.wxss**/
 
-/* .userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname,
-.userinfo-country {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-} */
-
-.indexPage {
+.indexPage__container {
   position: relative;
   width: 100%;
+}
+
+.common__search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  padding: 0 20rpx;
+  background-color: aquamarine;
+}
+
+.common__search-container .current-city {
+  margin-right: 40rpx;
+}
+
+.common__search-container .location-logo {
+  vertical-align: middle;
+}
+
+.common__search-container .city-name {
+  margin-left: 4rpx;
+  font-size: 28rpx;
+}
+
+.common__searchBar {
+  width: 70%;
+}
+
+.common__searchBar .common__searchBar-cell {
+  height: 100% !important;
+}
+
+.common__searchBar .common__searchBar-input {
+  font-size: 24rpx;
 }
 
 .swiper-container {

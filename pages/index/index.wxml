@@ -1,4 +1,14 @@
-<view class="indexPage">
+<view class="indexPage__container">
+  <view class="common__search-container">
+    <view class="current-city" bind:tap="pageToCity">
+      <van-icon class="location-logo" name="location-o" size="14px" />
+      <text class="city-name">全国</text>
+    </view>
+    <!-- searchBar -->
+    <view class="common__searchBar">
+      <van-field left-icon="search" clearable adjust-position class="common__searchBar-field" input-class="common__searchBar-input" value="{{ searchValue }}" placeholder="搜索精彩活动" border="{{ false }}" bind:change="searchOnChange" />
+    </view>
+  </view>
   <view class="swiper-container">
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
       <block wx:for="{{imgUrls}}" wx:key="item">
@@ -10,7 +20,7 @@
   </view>
   <!-- 个性选择 -->
   <view class="personal-choose-area">
-    <view class="personal-choose w100h35" bind:tap="pageToCity">友情</view>
+    <view class="personal-choose w100h35">友情</view>
     <view class="personal-choose w180h35">骚话</view>
     <view class="personal-choose w240h35">爱情</view>
     <view class="personal-choose w100h35">古典</view>

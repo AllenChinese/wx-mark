@@ -1,0 +1,8 @@
+.indexPage__container {}
+
+.common__search-container {
+  width: 100%;
+  height: 60rpx;
+  padding: 0 20rpx;
+  background-color: aquamarine;
+}
