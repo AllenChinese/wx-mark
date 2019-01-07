@@ -1,9 +1,10 @@
 {
   "pages": [
+        "pages/city/city",
     "pages/index/index",
     "pages/me/me",
-    "pages/activity/activity",
-    "pages/city/city"
+    "pages/activity/activity"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

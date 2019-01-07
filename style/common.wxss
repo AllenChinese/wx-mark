@@ -11,3 +11,14 @@
 .margin-top-30 {
   margin-top: 60rpx;
 }
+
+/* common */
+
+.common__textLine {
+  padding: 30rpx 0 20rpx;
+}
+
+.common__textLine text {
+  font-size: 24rpx;
+  color: #525252;
+}

@@ -1,1 +1,43 @@
-<text>city</text>
+<view class="cityPage__container">
+  <view class="local-city-wrap">
+    <view class="common__textLine">
+      <text>定位城市</text>
+    </view>
+    <view>
+      <van-button type="default" size="small" custom-class="china-city-btn common-city-btn">
+        全国
+      </van-button>
+    </view>
+  </view>
+  <view class="hot-city-wrap">
+    <view class="common__textLine">
+      <text>热门城市</text>
+    </view>
+    <view class="hot-city-items">
+      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
+        北京
+      </van-button>
+      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
+        上海
+      </van-button>
+      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
+        广州
+      </van-button>
+      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
+        杭州
+      </van-button>
+      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
+        深圳
+      </van-button>
+      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
+        南京
+      </van-button>
+      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
+        全国
+      </van-button>
+    </view>
+  </view>
+  <view class="bottom-word">
+    <text>其他城市将陆续开放，敬请期待</text>
+  </view>
+</view>
