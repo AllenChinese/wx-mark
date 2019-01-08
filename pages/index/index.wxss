@@ -5,7 +5,7 @@
   width: 100%;
 }
 
-.common__search-container {
+.indexPage__search-container {
   display: flex;
   align-items: center;
   width: 100%;
@@ -14,32 +14,32 @@
   background-color: #fff;
 }
 
-.common__search-container .current-city {
+.indexPage__search-container .current-city {
   margin-right: 40rpx;
 }
 
-.common__search-container .location-logo {
+.indexPage__search-container .location-logo {
   vertical-align: middle;
 }
 
-.common__search-container .city-name {
+.indexPage__search-container .city-name {
   margin-left: 4rpx;
   font-size: 28rpx;
 }
 
-.common__searchBar {
+.indexPage__searchBar {
   position: relative;
   width: 70%;
 }
 
-.common__searchBar .search-ico {
+.indexPage__searchBar .search-ico {
   position: absolute;
   top: 50%;
   left: 20rpx;
   margin-top: -7px;
 }
 
-.common__searchBar .common__searchBar--input {
+.indexPage__searchBar .indexPage__searchBar--input {
   padding: 8rpx 30rpx 4rpx 60rpx;
   border-radius: 10rpx;
   height: 70rpx;
@@ -55,7 +55,7 @@
   background-color: #f2f2f2;
 }
 
-.common__searchBar .input-placeholder {
+.indexPage__searchBar .input-placeholder {
   font-size: 24rpx;
 }
 

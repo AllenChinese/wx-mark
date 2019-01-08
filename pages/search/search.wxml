@@ -1,1 +1,4 @@
 <text>搜索页</text>
+<view class="searchPage__container">
+  <c-search />
+</view>

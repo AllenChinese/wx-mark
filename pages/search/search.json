@@ -1,1 +1,6 @@
-{}
+{
+  "navigationBarTitleText": "活动搜索",
+  "usingComponents": {
+    "c-search": "/components/c-search/c-search"
+  }
+}
