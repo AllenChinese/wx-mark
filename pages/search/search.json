@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "活动搜索",
   "usingComponents": {
-    "c-search": "/components/c-search/c-search"
+    "c-search": "/components/c-search/c-search",
+    "van-icon": "/miniprogram_npm/vant-weapp/icon/index"
   }
 }

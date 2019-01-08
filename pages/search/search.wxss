@@ -1,0 +1,46 @@
+.searchPage__container {}
+
+/* 历史搜索 */
+
+.hostory-search__container {
+  padding: 30rpx 30rpx 0;
+}
+
+.hostory-search__container .title-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hostory-search__container .title-bar .title {
+  font-size: 28rpx;
+  color: #777;
+  font-weight: 300;
+}
+
+.hostory-search__container .hostory-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-top: 10rpx;
+}
+
+.hostory-search__container .hostory-item {
+  position: relative;
+  margin: 0 30rpx 20rpx 0;
+  padding: 10rpx 20rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #d2d2d2;
+  font-size: 22rpx;
+  background-color: #f2f2f2;
+  -webkit-border-radius: 10rpx;
+  -moz-border-radius: 10rpx;
+  -ms-border-radius: 10rpx;
+  -o-border-radius: 10rpx;
+}
+
+.hostory-item .delete-btn {
+  position: absolute;
+  display: none;
+  top: -10rpx;
+  right: -10rpx;
+}

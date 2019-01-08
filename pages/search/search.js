@@ -6,7 +6,40 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    historyData: [
+      {
+        name: '中国杭州123',
+        isShow: false
+      },
+      {
+        name: '麻将',
+        isShow: false
+      },
+      {
+        name: 'China',
+        isShow: false
+      },
+      {
+        name: '旅游',
+        isShow: false
+      },
+      {
+        name: '酒吧聚会',
+        isShow: false
+      },
+      {
+        name: '很爽啊',
+        isShow: false
+      },
+      {
+        name: '呵呵',
+        isShow: false
+      },
+      {
+        name: '哈哈这就是我',
+        isShow: false
+      }
+    ]
   },
 
   /**
@@ -63,5 +96,36 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 长按历史搜索项唤出删除
+   */
+  showDeleteBtn: function (evt) {
+    const cur = evt.target.dataset.index
+    this.resetHistoryData()
+    this.data.historyData[cur].isShow = true
+    this.setData({
+      'historyData': this.data.historyData
+    })
+  },
+
+  /**
+   * 删除当前项
+   */
+  deleteHostoryItem: function (evt) {
+    console.log(evt.target.dataset.index)
+  },
+
+  /**
+   * 循环所有历史数据，重置 isShow
+   */
+  resetHistoryData: function () {
+    this.data.historyData.forEach((ele, index, array) => {
+      ele.isShow = false
+    })
+    this.setData({
+      'historyData': this.data.historyData
+    })
   }
 })

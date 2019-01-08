@@ -1,6 +1,8 @@
 <view class="c-search__container">
   <!-- searchBar -->
   <view class="c-searchBar">
-    <van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action input-class="searchBar-input" bind:search="onSearch" bind:cancel="onCancel" />
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action use-action-slot input-class="searchBar-input" bind:search="onSearch">
+      <view slot="action" bind:tap="onSearch">搜索</view>
+    </van-search>
   </view>
 </view>
