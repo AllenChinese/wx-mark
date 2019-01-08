@@ -6,7 +6,9 @@
     </view>
     <!-- searchBar -->
     <view class="common__searchBar">
-      <van-field left-icon="search" clearable adjust-position class="common__searchBar-field" input-class="common__searchBar-input" value="{{ searchValue }}" placeholder="搜索精彩活动" border="{{ false }}" bind:change="searchOnChange" />
+      <!-- <van-field left-icon="search" clearable adjust-position class="common__searchBar-field" input-class="common__searchBar-input" value="{{ searchValue }}" placeholder="搜索精彩活动" border="{{ false }}" bind:change="searchOnChange" /> -->
+      <van-icon name="search" custom-class="search-ico" color="#555" size="14px" />
+      <input class="common__searchBar--input" type="text" adjust-position placeholder="搜索精彩活动" bindfocus="searchOnFoucs" />
     </view>
   </view>
   <view class="swiper-container">
@@ -19,17 +21,4 @@
     </swiper>
   </view>
   <!-- 个性选择 -->
-  <view class="personal-choose-area">
-    <view class="personal-choose w100h35">友情</view>
-    <view class="personal-choose w180h35">骚话</view>
-    <view class="personal-choose w240h35">爱情</view>
-    <view class="personal-choose w100h35">古典</view>
-    <view class="personal-choose w240h35">名言</view>
-    <view class="personal-choose w180h35">宇宙</view>
-    <view class="personal-choose w240h35">莎士比亚</view>
-    <view class="personal-choose w180h35">文学</view>
-    <view class="personal-choose w240h35">韩寒</view>
-    <view class="personal-choose w240h35">程序员</view>
-    <view class="personal-choose w240h35">1024</view>
-  </view>
 </view>

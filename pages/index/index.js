@@ -86,7 +86,6 @@ Page({
   /**
    * 搜索活动事件
    */
-  searchOnChange() {
-
+  searchOnFoucs: function () {
   }
 })

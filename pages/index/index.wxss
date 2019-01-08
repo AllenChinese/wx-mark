@@ -9,9 +9,9 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100rpx;
+  height: 90rpx;
   padding: 0 20rpx;
-  background-color: aquamarine;
+  background-color: #fff;
 }
 
 .common__search-container .current-city {
@@ -28,14 +28,34 @@
 }
 
 .common__searchBar {
+  position: relative;
   width: 70%;
 }
 
-.common__searchBar .common__searchBar-cell {
-  height: 100% !important;
+.common__searchBar .search-ico {
+  position: absolute;
+  top: 50%;
+  left: 20rpx;
+  margin-top: -7px;
 }
 
-.common__searchBar .common__searchBar-input {
+.common__searchBar .common__searchBar--input {
+  padding: 8rpx 30rpx 4rpx 60rpx;
+  border-radius: 10rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  box-sizing: border-box;
+  -webkit-border-radius: 10rpx;
+  -moz-border-radius: 10rpx;
+  -ms-border-radius: 10rpx;
+  -o-border-radius: 10rpx;
+  caret-color: #aaa;
+  font-size: 24rpx;
+  color: #555;
+  background-color: #f2f2f2;
+}
+
+.common__searchBar .input-placeholder {
   font-size: 24rpx;
 }
 
@@ -51,39 +71,4 @@ swiper {
 .slide-image {
   width: 100%;
   height: 100%;
-}
-
-/* 个性选择区域 */
-
-.personal-choose-area {
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-  margin-top: 50rpx;
-  padding: 0 30rpx;
-}
-
-.personal-choose {
-  margin-bottom: 25rpx;
-  margin-right: 25rpx;
-  height: 65rpx;
-  line-height: 65rpx;
-  text-align: center;
-  font-size: 28rpx;
-  color: white;
-}
-
-.w180h35 {
-  width: 180rpx;
-  background-color: #F75A37;
-}
-
-.w100h35 {
-  width: 100rpx;
-  background-color: #E87F81;
-}
-
-.w240h35 {
-  width: 240rpx;
-  background-color: #6A29D2;
 }
