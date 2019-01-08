@@ -4,7 +4,7 @@
       <text>定位城市</text>
     </view>
     <view>
-      <van-button type="default" size="small" custom-class="china-city-btn common-city-btn">
+      <van-button type="default" size="small" custom-class="china-city-btn common-city-btn animated infinite tada">
         全国
       </van-button>
     </view>
