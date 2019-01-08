@@ -3,8 +3,8 @@
     "pages/index/index",
     "pages/city/city",
     "pages/me/me",
-    "pages/activity/activity"
-
+    "pages/activity/activity",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

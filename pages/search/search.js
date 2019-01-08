@@ -1,3 +1,4 @@
+
 // pages/me/me.js
 Page({
 
@@ -5,17 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../../assets/images/banner/banner1.jpeg',
-      '../../assets/images/banner/banner2.jpeg',
-      '../../assets/images/banner/banner3.jpeg',
-      '../../assets/images/banner/banner4.jpeg'
-    ],
-    indicatorDots: false,
-    autoplay: true,
-    interval: 3000,
-    duration: 1000,
-    searchValue: ''
+
   },
 
   /**
@@ -72,23 +63,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  /**
-   * 调转到城市选择
-   */
-  pageToCity: function () {
-    wx.navigateTo({
-      url: '/pages/city/city'
-    })
-  },
-
-  /**
-   * 搜索活动事件
-   */
-  pageToSearch: function () {
-    wx.navigateTo({
-      url: '/pages/search/search'
-    })
   }
 })
