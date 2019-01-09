@@ -4,12 +4,12 @@
   <view class="hostory-search__container">
     <view class="title-bar">
       <text class="title">历史搜索</text>
-      <van-icon name="delete" size="normal" color="#777" />
+      <van-icon name="delete" size="normal" color="#777" bind:tap="clearAllHistory" />
     </view>
     <view class="hostory-items">
       <view wx:for="{{historyData}}" wx:key="{{index}}" class="hostory-item animated {{item.isShow ? 'tada' : ''}}" data-index="{{index}}" bind:longpress="showDeleteBtn">
         {{item.name}}
-        <van-icon name="close" custom-class="delete-btn {{item.isShow ? 'isShow' : ''}}" color="#000" data-index="{{index}}" bind:click="deleteHostoryItem" />
+        <van-icon name="clear" custom-class="delete-btn {{item.isShow ? 'isShow' : ''}}" color="#555" data-index="{{index}}" bind:click="deleteHostoryItem" />
       </view>
     </view>
   </view>

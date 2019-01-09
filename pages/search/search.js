@@ -114,7 +114,21 @@ Page({
    * 删除当前项
    */
   deleteHostoryItem: function (evt) {
-    console.log(evt.target.dataset.index)
+    const cur = evt.target.dataset.index
+    this.data.historyData.splice(cur, 1)
+    this.setData({
+      'historyData': this.data.historyData
+    })
+  },
+
+  /**
+   * 清除所有历史搜索
+   */
+  clearAllHistory: function () {
+    this.data.historyData = []
+    this.setData({
+      'historyData': this.data.historyData
+    })
   },
 
   /**
