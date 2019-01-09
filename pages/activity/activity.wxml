@@ -1,2 +1,19 @@
-<!--pages/activity/activity.wxml-->
-<text>pages/activity/activity.wxml</text>
+<view class="activityPage__container">
+  <view class="activity-items">
+    <view class="swiper-container">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" previous-margin="60rpx" next-margin="60rpx">
+        <block wx:for="{{imgUrls}}" wx:key="item">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view class="activity-bar">
+    <view class="activity-bar--btn">发起活动</view>
+    <view class="activity-bar--tab">
+      <van-icon name="apps-o" custom-class="tab-ico" size="30px" />
+    </view>
+  </view>
+</view>

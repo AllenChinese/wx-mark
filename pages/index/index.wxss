@@ -18,7 +18,8 @@
 .indexPage__search-container .current-city {
   z-index: 9;
   position: absolute;
-  top: 15rpx;
+  display: flex;
+  align-items: center;
   left: 100rpx;
 }
 
@@ -29,7 +30,8 @@
 
 .indexPage__search-container .location-logo {
   position: relative;
-  vertical-align: middle;
+  height: 90rpx;
+  line-height: 90rpx;
 }
 
 .indexPage__search-container .current-city::before {
@@ -38,7 +40,7 @@
   position: absolute;
   top: 50%;
   left: 95rpx;
-  margin-top: -4rpx;
+  margin-top: -8rpx;
   width: 1rpx;
   height: 16rpx;
   background-color: #d2d2d2;
