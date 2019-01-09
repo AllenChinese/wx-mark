@@ -70,7 +70,7 @@
   caret-color: #aaa;
   font-size: 24rpx;
   color: #555;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 .indexPage__searchBar .input-placeholder {

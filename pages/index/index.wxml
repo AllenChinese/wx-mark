@@ -7,7 +7,7 @@
     <!-- searchBar -->
     <view class="indexPage__searchBar">
       <van-icon name="search" custom-class="search-ico" color="#555" size="14px" />
-      <input class="indexPage__searchBar--input" type="text" adjust-position placeholder="搜索精彩活动" bindfocus="pageToSearch" />
+      <input class="indexPage__searchBar--input" type="text" adjust-position placeholder="你想要什么活动？" bindfocus="pageToSearch" />
     </view>
   </view>
   <view class="swiper-container">
