@@ -6,41 +6,59 @@
 }
 
 .indexPage__search-container {
+  position: absolute;
+  z-index: 99;
+  top: 30rpx;
   display: flex;
   align-items: center;
   width: 100%;
   height: 90rpx;
-  padding: 0 20rpx;
-  background-color: #fff;
 }
 
 .indexPage__search-container .current-city {
-  margin-right: 40rpx;
-}
-
-.indexPage__search-container .location-logo {
-  vertical-align: middle;
+  z-index: 9;
+  position: absolute;
+  top: 15rpx;
+  left: 100rpx;
 }
 
 .indexPage__search-container .city-name {
-  margin-left: 4rpx;
-  font-size: 28rpx;
+  font-size: 24rpx;
+  color: #555;
+}
+
+.indexPage__search-container .location-logo {
+  position: relative;
+  vertical-align: middle;
+}
+
+.indexPage__search-container .current-city::before {
+  z-index: 9999;
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 95rpx;
+  margin-top: -4rpx;
+  width: 1rpx;
+  height: 16rpx;
+  background-color: #d2d2d2;
 }
 
 .indexPage__searchBar {
   position: relative;
-  width: 70%;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .indexPage__searchBar .search-ico {
   position: absolute;
   top: 50%;
-  left: 20rpx;
+  left: 140rpx;
   margin-top: -7px;
 }
 
 .indexPage__searchBar .indexPage__searchBar--input {
-  padding: 8rpx 30rpx 4rpx 60rpx;
+  padding: 8rpx 30rpx 4rpx 180rpx;
   border-radius: 10rpx;
   height: 70rpx;
   line-height: 70rpx;

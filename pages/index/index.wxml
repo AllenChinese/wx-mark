@@ -1,12 +1,11 @@
 <view class="indexPage__container">
   <view class="indexPage__search-container">
     <view class="current-city" bind:tap="pageToCity">
-      <van-icon class="location-logo" name="location-o" size="14px" />
-      <text class="city-name">全国</text>
+      <text class="city-name" decode="{{true}}">全国&nbsp;</text>
+      <van-icon custom-class="location-logo" name="arrow-down" size="6px" />
     </view>
     <!-- searchBar -->
     <view class="indexPage__searchBar">
-      <!-- <van-field left-icon="search" clearable adjust-position class="indexPage__searchBar-field" input-class="indexPage__searchBar-input" value="{{ searchValue }}" placeholder="搜索精彩活动" border="{{ false }}" bind:change="searchOnChange" /> -->
       <van-icon name="search" custom-class="search-ico" color="#555" size="14px" />
       <input class="indexPage__searchBar--input" type="text" adjust-position placeholder="搜索精彩活动" bindfocus="pageToSearch" />
     </view>
@@ -21,4 +20,5 @@
     </swiper>
   </view>
   <!-- 个性选择 -->
+  <view class="io">的开发李开复的麻烦</view>
 </view>
