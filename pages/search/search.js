@@ -141,5 +141,12 @@ Page({
     this.setData({
       'historyData': this.data.historyData
     })
+  },
+
+  /**
+   * 点击热门搜索跳转到活动列表页
+   */
+  goToSingleHotList: function () {
+
   }
 })

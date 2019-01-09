@@ -13,4 +13,21 @@
       </view>
     </view>
   </view>
+  <!-- 热门搜索 -->
+  <view class="hot-search__container">
+    <view class="title-bar">
+      <view>
+        <text class="title">热门搜索</text>
+        <van-icon name="hot" custom-class="hot-ico" color="#d93a49" size="16px" />
+      </view>
+      <text class="change-list title">换一批</text>
+    </view>
+    <view class="hot-items">
+      <view wx:for="{{historyData}}" wx:key="{{index}}" class="hot-item" bind:longpress="goToSingleHotList">
+        <text class="hot-item-num">{{index + 1}}</text>
+        {{item.name}}
+      </view>
+      <text class="hot-items-tip">排名不分先后，都很热哦</text>
+    </view>
+  </view>
 </view>
