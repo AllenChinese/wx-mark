@@ -6,6 +6,21 @@
           <swiper-item>
             <view class="item-container">
               <image src="{{item}}" class="slide-image" />
+              <view class="activity-content">
+                <view class="activity-theme">
+                  <text>深度工作：如何有效使用每一点脑力</text>
+                </view>
+                <view class="activity-sponsor">周嘉炜</view>
+                <view class="activity-address">浙江省杭州市西湖区湖滨银泰49号海底捞</view>
+                <view class="activity-date">2019.1.10</view>
+                <view class="activity-avatar__items">
+                  <view class="activity-avatar__item"></view>
+                  <view class="activity-avatar__item"></view>
+                  <view class="activity-avatar__item"></view>
+                  <view class="extend">等</view>
+                </view>
+                <view class="activity-person">Allen周嘉炜、姚玉洁、二爷等3位好友参与中</view>
+              </view>
             </view>
           </swiper-item>
         </block>

@@ -32,15 +32,81 @@ page {
 }
 
 .activity-items .item-container {
+  position: relative;
   height: 100%;
   background-color: #fff;
-  /* 提供圆角 */
+  /*提供圆角*/
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .slide-image {
+  position: relative;
   width: 100%;
-  height: 400rpx;
-  /* 提供圆角 */
+  height: 350rpx;
+  /*提供圆角*/
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+
+.activity-content {
+  padding: 30rpx 50rpx;
+}
+
+.activity-content .activity-theme {
+  line-height: 46rpx;
+  text-align: center;
+  font-size: 38rpx;
+  letter-spacing: 3rpx;
+}
+
+.activity-content .activity-sponsor,
+.activity-content .activity-address,
+.activity-content .activity-date {
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  text-align: center;
+  font-size: 28rpx;
+  letter-spacing: 3rpx;
+}
+
+.activity-content .activity-avatar__items {
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+
+.activity-content .activity-avatar__item {
+  margin-right: 20rpx;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 50rpx;
+  height: 50rpx;
+  border: 1rpx solid #d2d2d2;
+}
+
+.extend {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 8rpx;
+  font-size: 24rpx;
+}
+
+.activity-content .activity-person {
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #727272;
+  letter-spacing: 3rpx;
 }
 
 .activityPage__container .activity-bar {
