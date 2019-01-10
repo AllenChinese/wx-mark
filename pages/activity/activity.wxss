@@ -102,7 +102,7 @@ page {
 }
 
 .activity-content .activity-person {
-  margin-top: 20rpx;
+  margin-top: 30rpx;
   text-align: center;
   font-size: 26rpx;
   color: #727272;
