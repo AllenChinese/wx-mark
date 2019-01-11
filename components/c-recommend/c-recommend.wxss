@@ -37,6 +37,11 @@
 .module-recommend-part .recommend-item--title {
   padding: 5rpx 20rpx 0;
   font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .module-recommend-part .recommend-item--msg {
