@@ -35,13 +35,13 @@
 }
 
 .module-recommend-part .recommend-item--title {
-  padding: 10rpx 20rpx;
-  font-size: 30rpx;
+  padding: 5rpx 20rpx 0;
+  font-size: 28rpx;
 }
 
 .module-recommend-part .recommend-item--msg {
   display: flex;
   justify-content: space-between;
   padding: 20rpx;
-  font-size: 26rpx;
+  font-size: 24rpx;
 }
