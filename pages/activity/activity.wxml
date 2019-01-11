@@ -3,7 +3,7 @@
     <view class="swiper-container">
       <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" previous-margin="60rpx" next-margin="60rpx">
         <block wx:for="{{activitiesData}}" wx:key="item">
-          <swiper-item>
+          <swiper-item data-index="{{index}}" bind:tap="pageToActivityDetail">
             <view class="item-container">
               <image src="{{item.previewUrl}}" class="slide-image" />
               <view class="activity-content">

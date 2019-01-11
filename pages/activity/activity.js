@@ -66,7 +66,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.initActivityPerson()
+    this.initActivityPersonWord()
 
   },
 
@@ -122,7 +122,7 @@ Page({
   /**
    * 生成 activity-person 文案
    */
-  initActivityPerson: function () {
+  initActivityPersonWord: function () {
     let that = this
     this.data.activitiesData.forEach((ele, index) => {
       if (ele.person.length <= 1) {
@@ -141,5 +141,15 @@ Page({
       })
     })
     console.log(this.data.activitiesData)
+  },
+
+  /**
+   * 跳转到活动详情页
+   */
+  pageToActivityDetail: function (evt) {
+    console.log(evt.currentTarget.dataset.index)
+    wx.navigateTo({
+      url: '/pages/activityDetail/activityDetail'
+    })
   }
 })
