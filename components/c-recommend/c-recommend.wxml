@@ -1,0 +1,51 @@
+<!-- 为你推荐 -->
+<view class="module-recommend-part">
+  <view class="common-title">为你推荐</view>
+  <view class="recommend-items">
+    <view class="recommend-item">
+      <view class="recommend-item--preview">
+        <image src="../../assets/images/banner/banner1.jpeg" />
+      </view>
+      <view class="recommend-item--title">声音腾讯技术公开日成都站</view>
+      <view class="recommend-item--msg">
+        <text class="address">浙江杭州</text>
+        <text class="date">01/11周六</text>
+      </view>
+    </view>
+    <view class="recommend-item">
+      <view class="recommend-item--preview">
+        <image src="../../assets/images/banner/banner1.jpeg" />
+      </view>
+      <view class="recommend-item--title">声音腾讯技术公开日成都站</view>
+      <view class="recommend-item--msg">
+        <text class="address">浙江杭州</text>
+        <text class="date">01/11周六</text>
+      </view>
+    </view>
+    <view class="recommend-item">
+      <view class="recommend-item--preview">
+        <image src="../../assets/images/banner/banner1.jpeg" />
+      </view>
+      <view class="recommend-item--title">声音腾讯技术公开日成都站</view>
+      <view class="recommend-item--msg">
+        <text class="address">浙江杭州</text>
+        <text class="date">01/11周六</text>
+      </view>
+    </view>
+    <view class="recommend-item">
+      <view class="recommend-item--preview">
+        <image src="../../assets/images/banner/banner1.jpeg" />
+      </view>
+      <view class="recommend-item--title">声音腾讯技术公开日成都站</view>
+      <view class="recommend-item--msg">
+        <text class="address">浙江杭州</text>
+        <text class="date">01/11周六</text>
+      </view>
+    </view>
+  </view>
+  <view class="common-change-batch">
+    <van-button custom-class="common-change" loading-class="common-loading" loading="{{isLoading}}" type="default" bind:tap="changeBatchEvent">
+      换一批
+    </van-button>
+  </view>
+</view>

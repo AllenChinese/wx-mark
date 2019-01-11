@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "活动搜索",
   "usingComponents": {
+    "c-recommend": "/components/c-recommend/c-recommend",
     "van-icon": "/miniprogram_npm/vant-weapp/icon/index",
     "van-field": "/miniprogram_npm/vant-weapp/field/index"
   }

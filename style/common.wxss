@@ -39,6 +39,33 @@
   color: #525252;
 }
 
+/* 换一批 */
+
+.common-change-batch {
+  padding: 10rpx 30rpx;
+  height: 70rpx;
+  box-sizing: border-box;
+}
+
+.common-change-batch .common-change {
+  position: relative;
+  border-radius: 35rpx;
+  -webkit-border-radius: 35rpx;
+  -moz-border-radius: 35rpx;
+  -ms-border-radius: 35rpx;
+  -o-border-radius: 35rpx;
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 26rpx;
+  color: #1aa2fe;
+}
+
+.common-title {
+  font-size: 34rpx;
+  font-weight: 500;
+}
+
 .isShow {
   display: block !important;
 }

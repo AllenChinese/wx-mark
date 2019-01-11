@@ -92,3 +92,19 @@ swiper {
   width: 100%;
   height: 100%;
 }
+
+/* 快速入口 */
+
+.quick-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 60rpx;
+}
+
+.quick-container .quick-item {
+  text-align: center;
+}
+
+.quick-container .quick-item .quick-item--name {
+  font-size: 26rpx;
+}

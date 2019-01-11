@@ -19,6 +19,33 @@
       </block>
     </swiper>
   </view>
-  <!-- 个性选择 -->
-  <view class="io">待开发</view>
+  <!-- 快速入口 -->
+  <view class="quick-container">
+    <view class="quick-item">
+      <view class="quick-item--logo">
+        <van-icon name="hot-o" size="50rpx" />
+      </view>
+      <view class="quick-item--name">人气榜</view>
+    </view>
+    <view class="quick-item">
+      <view class="quick-item--logo">
+        <van-icon name="calender-o" size="50rpx" />
+      </view>
+      <view class="quick-item--name">活动日历</view>
+    </view>
+    <view class="quick-item">
+      <view class="quick-item--logo">
+        <van-icon name="like-o" size="50rpx" />
+      </view>
+      <view class="quick-item--name">收藏</view>
+    </view>
+    <view class="quick-item">
+      <view class="quick-item--logo">
+        <van-icon name="medel-o" size="50rpx" />
+      </view>
+      <view class="quick-item--name">好友周榜</view>
+    </view>
+  </view>
+  <!-- 为你推荐 -->
+  <c-recommend />
 </view>
