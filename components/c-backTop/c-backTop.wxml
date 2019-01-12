@@ -1,1 +1,1 @@
-<view class="back-top animated tada" bind:tap="backTopEvent" wx:if="{{isShow}}">Top</view>
+<view class="back-top animated zoomIn faster" bind:tap="backTopEvent" wx:if="{{isShow}}">Top</view>
