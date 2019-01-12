@@ -1,0 +1,3 @@
+<view class="allClassPage__container">
+  <c-class external-class-title="external-class-title" external-class-btn="external-class-btn" />
+</view>

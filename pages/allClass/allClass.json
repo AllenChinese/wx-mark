@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "全部分类",
+  "usingComponents": {
+    "c-class": "/components/c-class/c-class"
+  }
+}

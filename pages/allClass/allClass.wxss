@@ -1,0 +1,8 @@
+.allClassPage__container {
+  margin: 0;
+}
+
+.allClassPage__container .external-class-title,
+.allClassPage__container .external-class-btn {
+  display: none;
+}

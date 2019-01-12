@@ -5,6 +5,7 @@
     "pages/search/search",
     "pages/city/city",
     "pages/me/me",
+    "pages/allClass/allClass",
     "pages/activityDetail/activityDetail"
   ],
   "window": {
