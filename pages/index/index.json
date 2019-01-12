@@ -4,6 +4,7 @@
     "c-recommend": "/components/c-recommend/c-recommend",
     "c-backTop": "/components/c-backTop/c-backTop",
     "c-hot": "/components/c-hot/c-hot",
+    "c-class": "/components/c-class/c-class",
     "van-icon": "/miniprogram_npm/vant-weapp/icon/index",
     "van-field": "/miniprogram_npm/vant-weapp/field/index"
   }

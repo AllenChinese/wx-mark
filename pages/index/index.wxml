@@ -52,4 +52,6 @@
   <c-recommend />
   <!-- 当前最热 -->
   <c-hot />
+  <!-- 分类 -->
+  <c-class />
 </view>

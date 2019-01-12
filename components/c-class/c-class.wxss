@@ -1,0 +1,7 @@
+@import "../../style/list.wxss";
+@import "../../style/common.wxss";
+/* 分类 */
+
+.module-class-part {
+  padding: 15rpx 30rpx;
+}
