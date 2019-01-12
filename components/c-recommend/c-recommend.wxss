@@ -1,52 +1,7 @@
+@import "../../style/list.wxss";
 @import "../../style/common.wxss";
 /* 为你推荐 */
 
 .module-vertical-part {
   padding: 15rpx 30rpx;
-}
-
-.module-vertical-part .vertical-items {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 20rpx;
-}
-
-.module-vertical-part .vertical-item {
-  margin-bottom: 20rpx;
-  border: 1rpx solid #d2d2d2;
-  border-radius: 10rpx;
-  width: 48%;
-  box-sizing: border-box;
-  -webkit-border-radius: 10rpx;
-  -moz-border-radius: 10rpx;
-  -ms-border-radius: 10rpx;
-  -o-border-radius: 10rpx;
-}
-
-.module-vertical-part .vertical-item--preview image {
-  border-radius: 10rpx 10rpx 0 0;
-  width: 100%;
-  height: 180rpx;
-  -webkit-border-radius: 10rpx 10rpx 0 0;
-  -moz-border-radius: 10rpx 10rpx 0 0;
-  -ms-border-radius: 10rpx 10rpx 0 0;
-  -o-border-radius: 10rpx 10rpx 0 0;
-}
-
-.module-vertical-part .vertical-item--title {
-  padding: 5rpx 20rpx 0;
-  font-size: 28rpx;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.module-vertical-part .vertical-item--msg {
-  display: flex;
-  justify-content: space-between;
-  padding: 20rpx;
-  font-size: 24rpx;
 }

@@ -5,40 +5,52 @@
       <view class="horizontal-item--preview">
         <image src="../../assets/images/banner/banner1.jpeg" />
       </view>
-      <view class="horizontal-item--title">声音腾讯技术公开日成都站</view>
-      <view class="horizontal-item--msg">
-        <text class="address">浙江杭州</text>
-        <text class="date">01/11周六</text>
+      <view>
+        <view class="horizontal-item--title">声音腾讯技术公开日成都站</view>
+        <view class="horizontal-item--desc">声音腾讯技术公开日成都站声音腾讯技术公开日成都站</view>
+        <view class="horizontal-item--msg">
+          <text class="address">浙江杭州</text>
+          <text class="date">01/11周六</text>
+        </view>
       </view>
     </view>
     <view class="horizontal-item">
       <view class="horizontal-item--preview">
         <image src="../../assets/images/banner/banner1.jpeg" />
       </view>
-      <view class="horizontal-item--title">声音腾讯技术公开日成都站</view>
-      <view class="horizontal-item--msg">
-        <text class="address">浙江杭州</text>
-        <text class="date">01/11周六</text>
+      <view>
+        <view class="horizontal-item--title">声音腾讯技术公开日成都站</view>
+        <view class="horizontal-item--desc">声音腾讯技术公开日成都站声音腾讯技术公开日成都站</view>
+        <view class="horizontal-item--msg">
+          <text class="address">浙江杭州</text>
+          <text class="date">01/11周六</text>
+        </view>
       </view>
     </view>
     <view class="horizontal-item">
       <view class="horizontal-item--preview">
         <image src="../../assets/images/banner/banner1.jpeg" />
       </view>
-      <view class="horizontal-item--title">声音腾讯技术公开日成都站</view>
-      <view class="horizontal-item--msg">
-        <text class="address">浙江杭州</text>
-        <text class="date">01/11周六</text>
+      <view>
+        <view class="horizontal-item--title">声音腾讯技术公开日成都站</view>
+        <view class="horizontal-item--desc">声音腾讯技术公开日成都站声音腾讯技术公开日成都站</view>
+        <view class="horizontal-item--msg">
+          <text class="address">浙江杭州</text>
+          <text class="date">01/11周六</text>
+        </view>
       </view>
     </view>
     <view class="horizontal-item">
       <view class="horizontal-item--preview">
         <image src="../../assets/images/banner/banner1.jpeg" />
       </view>
-      <view class="horizontal-item--title">声音腾讯技术公开日成都站</view>
-      <view class="horizontal-item--msg">
-        <text class="address">浙江杭州</text>
-        <text class="date">01/11周六</text>
+      <view>
+        <view class="horizontal-item--title">声音腾讯技术公开日成都站</view>
+        <view class="horizontal-item--desc">声音腾讯技术公开日成都站声音腾讯技术公开日成都站</view>
+        <view class="horizontal-item--msg">
+          <text class="address">浙江杭州</text>
+          <text class="date">01/11周六</text>
+        </view>
       </view>
     </view>
   </view>
