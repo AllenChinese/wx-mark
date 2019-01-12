@@ -51,4 +51,6 @@
   <!-- 为你推荐 -->
   <c-recommend />
   <c-recommend />
+  <!-- 当前最热 -->
+  <c-hot />
 </view>
