@@ -1,0 +1,20 @@
+@import "../../style/animate.wxss";
+.back-top {
+  z-index: 999;
+  position: fixed;
+  right: 30rpx;
+  bottom: 40rpx;
+  border-radius: 50%;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 24rpx;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #fff;
+  box-shadow: 0 5rpx 10rpx 0 #ccc;
+  background-color: #333;
+}

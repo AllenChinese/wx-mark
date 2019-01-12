@@ -1,0 +1,1 @@
+<view class="back-top animated tada" bind:tap="backTopEvent" wx:if="{{isShow}}">Top</view>

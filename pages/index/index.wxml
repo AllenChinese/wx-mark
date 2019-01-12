@@ -1,4 +1,6 @@
 <view class="indexPage__container">
+  <!-- backTop -->
+  <c-backTop wx:if="{{isBackTopShow}}" />
   <view class="indexPage__search-container">
     <view class="current-city" bind:tap="pageToCity">
       <text class="city-name" decode="{{true}}">全国&nbsp;</text>
@@ -47,5 +49,6 @@
     </view>
   </view>
   <!-- 为你推荐 -->
+  <c-recommend />
   <c-recommend />
 </view>

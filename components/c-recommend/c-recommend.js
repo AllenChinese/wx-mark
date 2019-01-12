@@ -11,8 +11,6 @@ Component({
     isLoading: false
   },
   methods: {
-    onSearch() { },
-    onCancel() { },
     changeBatchEvent: function () {
       if (this.data.isLoading) {
         return false

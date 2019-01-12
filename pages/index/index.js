@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isBackTopShow: false,
     imgUrls: [
       '../../assets/images/banner/banner1.jpeg',
       '../../assets/images/banner/banner2.jpeg',
@@ -72,6 +73,28 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 监听页面滚动条事件，控制 backTop 控件显示、隐藏
+   * @param Option {Object} - 滚动时信息
+   */
+  onPageScroll: function (Option) {
+    const backTopThreshold = 630
+    if (Option.scrollTop >= backTopThreshold
+      && this.data.isBackTopShow === false
+    ) {
+      this.setData({
+        isBackTopShow: true
+      })
+    } else if (Option.scrollTop < backTopThreshold
+      && this.data.isBackTopShow === true) {
+      this.setData({
+        isBackTopShow: false
+      })
+    } else {
+      return false
+    }
   },
 
   /**
