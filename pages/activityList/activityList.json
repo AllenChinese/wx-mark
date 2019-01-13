@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "活动搜索",
+  "usingComponents": {
+    "c-list": "/components/c-list/c-list"
+  }
+}

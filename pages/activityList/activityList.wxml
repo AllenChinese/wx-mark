@@ -1,0 +1,3 @@
+<view class="activityListPage__container">
+  <c-list />
+</view>

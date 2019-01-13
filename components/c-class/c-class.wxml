@@ -1,7 +1,7 @@
 <view class="module-class-part external-class-part">
   <view class="common-title external-class-title">活动分类</view>
   <view class="class-items">
-    <view class="class-item">
+    <view class="class-item" bind:tap="goToActivityList">
       <view class="class-item--msg">
         <view class="class-item--msg-title">程序员活动</view>
         <view class="class-item--msg-total">10000个活动</view>
@@ -10,7 +10,7 @@
         <image src="../../assets/images/banner/banner2.jpeg" />
       </view>
     </view>
-    <view class="class-item">
+    <view class="class-item" bind:tap="goToActivityList">
       <view class="class-item--msg">
         <view class="class-item--msg-title">程序员活动</view>
         <view class="class-item--msg-total">10000个活动</view>
@@ -19,7 +19,7 @@
         <image src="../../assets/images/banner/banner2.jpeg" />
       </view>
     </view>
-    <view class="class-item">
+    <view class="class-item" bind:tap="goToActivityList">
       <view class="class-item--msg">
         <view class="class-item--msg-title">程序员活动</view>
         <view class="class-item--msg-total">10000个活动</view>
@@ -28,7 +28,7 @@
         <image src="../../assets/images/banner/banner2.jpeg" />
       </view>
     </view>
-    <view class="class-item">
+    <view class="class-item" bind:tap="goToActivityList">
       <view class="class-item--msg">
         <view class="class-item--msg-title">程序员活动</view>
         <view class="class-item--msg-total">10000个活动</view>

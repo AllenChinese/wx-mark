@@ -6,6 +6,7 @@
     "pages/city/city",
     "pages/me/me",
     "pages/allClass/allClass",
+    "pages/activityList/activityList",
     "pages/activityDetail/activityDetail"
   ],
   "window": {
