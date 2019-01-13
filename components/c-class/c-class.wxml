@@ -1,5 +1,5 @@
 <view class="module-class-part external-class-part">
-  <view class="common-title external-class-title">分类</view>
+  <view class="common-title external-class-title">活动分类</view>
   <view class="class-items">
     <view class="class-item">
       <view class="class-item--msg">

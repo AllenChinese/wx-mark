@@ -1,0 +1,5 @@
+@import "../../style/list.wxss";
+@import "../../style/common.wxss";
+.module-list-part {
+  padding: 15rpx 30rpx;
+}
