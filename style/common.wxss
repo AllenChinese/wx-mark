@@ -85,7 +85,7 @@
 
 .common-dataless--default {
   text-align: center;
-  font-size: 28rpx;
+  font-size: 26rpx;
   font-weight: 300;
   color: #d2d2d2;
 }

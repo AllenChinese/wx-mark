@@ -21,6 +21,10 @@ Component({
         this.setData({
           dataLess: true
         })
+        wx.setStorage({
+          key: 'dataless',
+          data: true
+        })
       }
       while (this.data.listData.length < 16 * this.data.curPage) {
         this.data.listData.push(

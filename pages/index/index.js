@@ -23,7 +23,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.setStorage({
+      key: 'dataless',
+      data: false
+    })
   },
 
   /**
@@ -65,10 +68,18 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    wx.showToast({
-      title: '你好'
+    const that = this
+    wx.getStorage({
+      key: 'dataless',
+      success: function (res) {
+        console.log(res)
+        if (!res.data) {
+          that.selectComponent('#allListComponent').nextPage()
+        }
+      }
     })
-    this.selectComponent('#allListComponent').nextPage()
+
+
   },
 
   /**
@@ -104,11 +115,6 @@ Page({
     } else {
       return false
     }
-  },
-
-  // 监听上拉加载更多事件
-  loadMoreListener: function () {
-
   },
 
   /**
