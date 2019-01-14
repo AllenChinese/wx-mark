@@ -65,7 +65,10 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    wx.showToast({
+      title: '你好'
+    })
+    this.selectComponent('#allListComponent').nextPage()
   },
 
   /**
@@ -76,10 +79,16 @@ Page({
   },
 
   /**
-   * 监听页面滚动条事件，控制 backTop 控件显示、隐藏
+   * 1、监听页面滚动条事件，控制 backTop 控件显示、隐藏
+   * 2、监听上拉加载更多事件
    * @param Option {Object} - 滚动时信息
    */
   onPageScroll: function (Option) {
+    this.backTopListener(Option)
+  },
+
+  // 监听页面滚动条事件
+  backTopListener: function (Option) {
     const backTopThreshold = 630
     if (Option.scrollTop >= backTopThreshold
       && this.data.isBackTopShow === false
@@ -95,6 +104,11 @@ Page({
     } else {
       return false
     }
+  },
+
+  // 监听上拉加载更多事件
+  loadMoreListener: function () {
+
   },
 
   /**

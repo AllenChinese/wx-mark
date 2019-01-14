@@ -69,3 +69,23 @@
 .isShow {
   display: block !important;
 }
+
+.isHide {
+  display: none !important;
+}
+
+/* loading */
+
+.common-loading--default {
+  display: flex;
+  justify-content: center;
+}
+
+/* 数据加载完 */
+
+.common-dataless--default {
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 300;
+  color: #d2d2d2;
+}

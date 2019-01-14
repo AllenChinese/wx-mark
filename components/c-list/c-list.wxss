@@ -3,3 +3,7 @@
 .module-list-part {
   padding: 15rpx 30rpx;
 }
+
+.module-list-part .horizontal-item:nth-of-type(even) {
+  margin-bottom: 30rpx;
+}
