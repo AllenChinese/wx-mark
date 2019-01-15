@@ -1,40 +1,13 @@
 <view class="module-class-part external-class-part">
   <view class="common-title external-class-title">活动分类</view>
   <view class="class-items">
-    <view class="class-item" bind:tap="goToActivityList">
+    <view wx:for="{{classList}}" wx:key="{{index}}" class="class-item" data-type="{{item.type}}" bind:tap="goToActivityList">
       <view class="class-item--msg">
-        <view class="class-item--msg-title">程序员活动</view>
-        <view class="class-item--msg-total">10000个活动</view>
+        <view class="class-item--msg-title">{{item.title}}</view>
+        <view class="class-item--msg-total">{{item.total}}个活动</view>
       </view>
       <view class="class-item--preview">
-        <image src="../../assets/images/banner/banner2.jpeg" />
-      </view>
-    </view>
-    <view class="class-item" bind:tap="goToActivityList">
-      <view class="class-item--msg">
-        <view class="class-item--msg-title">程序员活动</view>
-        <view class="class-item--msg-total">10000个活动</view>
-      </view>
-      <view class="class-item--preview">
-        <image src="../../assets/images/banner/banner2.jpeg" />
-      </view>
-    </view>
-    <view class="class-item" bind:tap="goToActivityList">
-      <view class="class-item--msg">
-        <view class="class-item--msg-title">程序员活动</view>
-        <view class="class-item--msg-total">10000个活动</view>
-      </view>
-      <view class="class-item--preview">
-        <image src="../../assets/images/banner/banner2.jpeg" />
-      </view>
-    </view>
-    <view class="class-item" bind:tap="goToActivityList">
-      <view class="class-item--msg">
-        <view class="class-item--msg-title">程序员活动</view>
-        <view class="class-item--msg-total">10000个活动</view>
-      </view>
-      <view class="class-item--preview">
-        <image src="../../assets/images/banner/banner2.jpeg" />
+        <image src="{{item.preview}}" />
       </view>
     </view>
   </view>

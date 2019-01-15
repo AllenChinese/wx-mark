@@ -19,7 +19,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    console.log('-----')
     this.loadMore()
   },
 
@@ -37,17 +36,17 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    wx.setStorage({
-      key: 'dataless',
-      data: false
-    })
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    wx.setStorage({
+      key: 'c_type',
+      data: ''
+    })
   },
 
   /**

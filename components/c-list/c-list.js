@@ -1,4 +1,5 @@
 Component({
+  pageTitle: '全部活动',
   data: {
     listData: [],
     curPage: 1,
@@ -6,7 +7,7 @@ Component({
     dataLess: false
   },
   created() {
-    // this.loadMoreList()
+
   },
   /**
    * 生命周期函数--监听页面加载
@@ -14,8 +15,10 @@ Component({
   attached() {
     this.preferListLayout()
   },
+
   methods: {
     loadMoreList: function () {
+      // storage c_type for key on request
       if (this.data.curPage >= 6) {
         this.setData({
           dataLess: true

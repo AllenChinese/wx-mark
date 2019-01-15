@@ -22,5 +22,5 @@
   <view class="common-loading--default" wx:if="{{!dataLess}}">
     <van-loading type="spinner" size="20px" />
   </view>
-  <view class="common-dataless--default" wx:if="{{dataLess}}">我也是有底线的...</view>
+  <view class="common-dataless--default" wx:if="{{dataLess}}">我是有底线的</view>
 </view>

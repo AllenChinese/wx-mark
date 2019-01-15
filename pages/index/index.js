@@ -119,7 +119,9 @@ Page({
   },
 
   loadMore: function () {
-    this.selectComponent('#allListComponent').nextPage()
+    this.selectComponent('#allListComponent').nextPage({
+      type: 'index'
+    })
   },
 
   /**
