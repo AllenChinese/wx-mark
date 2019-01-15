@@ -10,9 +10,9 @@ Page({
     isLoading: false,
     formdata: {
       render: '1',
-      age: '',
-      where: '',
-      frequency: '',
+      age: '<18',
+      where: '好友圈',
+      frequency: '至少每周一次',
       newFun: '',
       mind: ''
     }
