@@ -6,7 +6,7 @@ Component({
     dataLess: false
   },
   created() {
-    this.loadMoreList()
+    // this.loadMoreList()
   },
   /**
    * 生命周期函数--监听页面加载
@@ -16,8 +16,7 @@ Component({
   },
   methods: {
     loadMoreList: function () {
-      console.log('当前页', this.data.curPage)
-      if (this.data.curPage === 6) {
+      if (this.data.curPage >= 6) {
         this.setData({
           dataLess: true
         })
@@ -25,7 +24,9 @@ Component({
           key: 'dataless',
           data: true
         })
+        return false
       }
+      console.log('当前页', this.data.curPage)
       while (this.data.listData.length < 16 * this.data.curPage) {
         this.data.listData.push(
           {

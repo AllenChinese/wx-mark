@@ -23,10 +23,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setStorage({
-      key: 'dataless',
-      data: false
-    })
+
   },
 
   /**
@@ -40,14 +37,20 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.setStorage({
+      key: 'dataless',
+      data: false
+    })
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    wx.setStorage({
+      key: 'dataless',
+      data: false
+    })
   },
 
   /**
@@ -72,13 +75,11 @@ Page({
     wx.getStorage({
       key: 'dataless',
       success: function (res) {
-        console.log(res)
         if (!res.data) {
-          that.selectComponent('#allListComponent').nextPage()
+          that.loadMore()
         }
       }
     })
-
 
   },
 
@@ -115,6 +116,10 @@ Page({
     } else {
       return false
     }
+  },
+
+  loadMore: function () {
+    this.selectComponent('#allListComponent').nextPage()
   },
 
   /**

@@ -55,5 +55,5 @@
   <!-- 分类 -->
   <c-class />
   <!-- 全部活动 -->
-  <c-list id="allListComponent" prop-listData="{{allList.listData}}" />
+  <c-list id="allListComponent" />
 </view>
