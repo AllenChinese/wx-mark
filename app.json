@@ -5,6 +5,7 @@
     "pages/search/search",
     "pages/city/city",
     "pages/me/me",
+    "pages/me-questionnaire/me-questionnaire",
     "pages/allClass/allClass",
     "pages/activityList/activityList",
     "pages/activityDetail/activityDetail"

@@ -46,7 +46,7 @@
       <van-cell border="{{ false }}" icon="point-gift-o" title="活动心愿池" value="内容" border="{{ false }}" is-link />
     </van-cell-group>
     <van-cell-group custom-class="second-cell">
-      <van-cell value="内容" icon="edit" is-link>
+      <van-cell value="内容" icon="edit" is-link data-url="/pages/me-questionnaire/me-questionnaire" bind:tap="goToPage">
         <view slot="title">
           <text decode="{{true}}">问卷调查&nbsp;</text>
           <van-tag color="#a061ff">加分</van-tag>
