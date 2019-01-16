@@ -44,7 +44,7 @@ Page({
    */
   onUnload: function () {
     wx.setStorage({
-      key: 'c_type',
+      key: 'Class',
       data: ''
     })
   },

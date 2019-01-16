@@ -72,15 +72,22 @@ Page({
     })
   },
 
-  goToActivityListPage: function () {
-    const c_type = 'c_me'
+  goToActivityListPage: function (event) {
+    // save in storage
+    let Class = {
+      c_type: event.currentTarget.dataset.type,
+      c_title: event.currentTarget.dataset.title
+    }
     wx.setStorage({
-      key: 'c_type',
-      data: c_type,
+      key: 'Class',
+      data: Class,
       success: function () {
         wx.navigateTo({
-          url: '/pages/activityList/activityList'
+          url: "/pages/activityList/activityList"
         })
+      },
+      fail: function () {
+        // 接口调用失败
       }
     })
   }

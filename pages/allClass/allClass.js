@@ -5,7 +5,56 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    classList: [
+      {
+        title: '程序员活动',
+        type: 'c_1',
+        total: 1000,
+        preview: '../../assets/images/banner/banner2.jpeg'
+      },
+      {
+        title: '酒吧',
+        type: 'c_2',
+        total: 100000,
+        preview: '../../assets/images/banner/banner2.jpeg'
+      },
+      {
+        title: '运动会',
+        type: 'c_3',
+        total: 2800,
+        preview: '../../assets/images/banner/banner2.jpeg'
+      },
+      {
+        title: '美食嘉年华',
+        type: 'c_4',
+        total: 1908,
+        preview: '../../assets/images/banner/banner2.jpeg'
+      },
+      {
+        title: '运动会',
+        type: 'c_3',
+        total: 2800,
+        preview: '../../assets/images/banner/banner2.jpeg'
+      },
+      {
+        title: '美食嘉年华',
+        type: 'c_4',
+        total: 1908,
+        preview: '../../assets/images/banner/banner2.jpeg'
+      },
+      {
+        title: '运动会',
+        type: 'c_3',
+        total: 2800,
+        preview: '../../assets/images/banner/banner2.jpeg'
+      },
+      {
+        title: '美食嘉年华',
+        type: 'c_4',
+        total: 1908,
+        preview: '../../assets/images/banner/banner2.jpeg'
+      }
+    ]
   },
 
   /**
@@ -62,8 +111,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-
-
+  }
 })

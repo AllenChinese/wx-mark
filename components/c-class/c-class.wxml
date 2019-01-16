@@ -1,7 +1,7 @@
 <view class="module-class-part external-class-part">
   <view class="common-title external-class-title">活动分类</view>
   <view class="class-items">
-    <view wx:for="{{classList}}" wx:key="{{index}}" class="class-item" data-type="{{item.type}}" bind:tap="goToActivityList">
+    <view wx:for="{{propClassList}}" wx:key="{{index}}" class="class-item" data-title="{{item.title}}" data-type="{{item.type}}" bind:tap="goToActivityList">
       <view class="class-item--msg">
         <view class="class-item--msg-title">{{item.title}}</view>
         <view class="class-item--msg-total">{{item.total}}个活动</view>

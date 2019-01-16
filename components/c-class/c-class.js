@@ -1,31 +1,12 @@
 Component({
   data: {
-    classList: [
-      {
-        title: '程序员活动',
-        type: 'c_1',
-        total: 1000,
-        preview: '../../assets/images/banner/banner2.jpeg'
-      },
-      {
-        title: '酒吧',
-        type: 'c_2',
-        total: 100000,
-        preview: '../../assets/images/banner/banner2.jpeg'
-      },
-      {
-        title: '运动会',
-        type: 'c_3',
-        total: 2800,
-        preview: '../../assets/images/banner/banner2.jpeg'
-      },
-      {
-        title: '美食嘉年华',
-        type: 'c_4',
-        total: 1908,
-        preview: '../../assets/images/banner/banner2.jpeg'
-      }
-    ]
+    classList: []
+  },
+  properties: {
+    propClassList: {
+      type: Array,
+      value: []
+    }
   },
   externalClasses: ['external-class-part', 'external-class-title', 'external-class-btn'],
   methods: {
@@ -42,9 +23,13 @@ Component({
      */
     goToActivityList: function (event) {
       // save in storage
+      let Class = {
+        c_type: event.currentTarget.dataset.type,
+        c_title: event.currentTarget.dataset.title
+      }
       wx.setStorage({
-        key: 'c_type',
-        data: event.currentTarget.dataset.type,
+        key: 'Class',
+        data: Class,
         success: function () {
           wx.navigateTo({
             url: "/pages/activityList/activityList"
@@ -55,6 +40,5 @@ Component({
         }
       })
     }
-  },
-
+  }
 })

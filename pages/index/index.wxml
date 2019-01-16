@@ -53,7 +53,7 @@
   <!-- 当前最热 -->
   <c-hot />
   <!-- 分类 -->
-  <c-class />
+  <c-class prop-classList="{{classList}}" />
   <!-- 全部活动 -->
   <c-list id="allListComponent" />
 </view>

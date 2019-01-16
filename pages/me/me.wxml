@@ -25,7 +25,7 @@
   <view class="mePage__function-part">
     <van-row>
       <van-col span="8">
-        <view class="mePage__function-item" bind:tap="goToActivityListPage">
+        <view class="mePage__function-item" data-title="全部活动" data-type="c_me" bind:tap="goToActivityListPage">
           <text>全部活动</text>
         </view>
       </van-col>

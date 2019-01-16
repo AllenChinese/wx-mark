@@ -1,5 +1,5 @@
 <view class="module-list-part">
-  <view class="common-title">全部活动</view>
+  <view class="common-title">{{pageTitle}}</view>
   <view class="common-items">
     <!-- 一组 start -->
     <view wx:for="{{listData}}" wx:key="{{index}}" class="{{item.isVer ? 'vertical-item' : 'horizontal-item'}}">
