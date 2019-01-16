@@ -70,5 +70,18 @@ Page({
     wx.navigateTo({
       url: event.currentTarget.dataset.url
     })
+  },
+
+  goToActivityListPage: function () {
+    const c_type = 'c_me'
+    wx.setStorage({
+      key: 'c_type',
+      data: c_type,
+      success: function () {
+        wx.navigateTo({
+          url: '/pages/activityList/activityList'
+        })
+      }
+    })
   }
 })
