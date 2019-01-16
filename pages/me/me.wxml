@@ -2,22 +2,24 @@
 <view class="mePage__container">
   <!-- mePage__userMsg -->
   <view class="mePage__userMsg-part">
-    <van-row>
-      <van-col span="6" offset="2">
-        <image class="mePage__person-img" mode src="../../assets/images/cat.jpeg"></image>
-      </van-col>
-      <van-col span="8">
-        <view>
-          <text>清风少年风清扬</text>
-        </view>
-      </van-col>
-      <van-col span="8">
-        <view>
-          <text decode="{{true}}">等级:&nbsp;</text>
-          <text>party 大师</text>
-        </view>
-      </van-col>
-    </van-row>
+    <view class="mePage_userMsg-content">
+      <van-row>
+        <van-col span="8" offset="2">
+          <image class="mePage__person-img" mode src="../../assets/images/cat.jpeg"></image>
+        </van-col>
+        <van-col span="14">
+          <view class="mePage_msg">
+            <view class="mePage_msg--name">
+              <text>清风少年风清扬</text>
+            </view>
+            <view class="mePage_msg--level">
+              <text decode="{{true}}">等级:&nbsp;</text>
+              <text>party 大师</text>
+            </view>
+          </view>
+        </van-col>
+      </van-row>
+    </view>
   </view>
   <!-- mePage__function -->
   <view class="mePage__function-part">

@@ -5,10 +5,16 @@
 /* 用户信息 */
 
 .mePage__userMsg-part {
-  height: 200rpx;
-  line-height: 200rpx;
+  height: 340rpx;
+  line-height: 340rpx;
   font-size: 28rpx;
-  background-color: bisque;
+  background: url('http://pic.97uimg.com/back_pic/00/00/40/82/1dc98cc63a90b31b910bcbd4f5498a1a.jpg') no-repeat 0 0;
+  /* background: url('http://img.vice.cn/contentimage/34039/147132854597c93a52413a9969e370cddc515dc4e5.jpg') no-repeat 0 0; */
+}
+
+.mePage_userMsg-content {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .mePage__person-img {
@@ -17,15 +23,40 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  width: 150rpx;
-  height: 150rpx;
+  width: 200rpx;
+  height: 200rpx;
   vertical-align: middle;
+}
+
+.mePage_msg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 110rpx;
+}
+
+.mePage_msg view {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.mePage_msg .mePage_msg--name {
+  font-family: 'PingFangSC-Semibold';
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.mePage_msg .mePage_msg--level {
+  font-family: 'PingFangSC-Regular';
+  font-size: 24rpx;
+  color: #c2c2c2;
 }
 
 .mePage__function-part {
   border: 1px solid #b2b2b2;
-  height: 200rpx;
-  line-height: 200rpx;
+  height: 140rpx;
+  line-height: 140rpx;
   font-size: 28rpx;
 }
 
