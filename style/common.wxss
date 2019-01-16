@@ -14,6 +14,10 @@
 
 /* #f15a22 金赤 */
 
+body {
+  background-color: #f2f2f2;
+}
+
 .no-border {
   border: none !important;
 }

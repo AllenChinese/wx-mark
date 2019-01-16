@@ -54,7 +54,7 @@
           <van-tag color="#a061ff">加分</van-tag>
         </view>
       </van-cell>
-      <van-cell border="{{ false }}" icon="question-o" title="常见问题" value="内容" border="{{ false }}" is-link />
+      <van-cell border="{{ false }}" icon="question-o" title="常见问题" value="内容" border="{{ false }}" is-link data-url="/pages/me-question/me-question" bind:tap="goToPage" />
     </van-cell-group>
   </view>
   <!-- mePage__conpany-part -->

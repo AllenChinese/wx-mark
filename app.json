@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/me-question/me-question",
     "pages/me/me",
     "pages/index/index",
     "pages/activity/activity",

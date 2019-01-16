@@ -1,0 +1,36 @@
+.meQuestionPage__container {
+  background-color: #f2f2f2;
+}
+
+.meQuestionPage__container .vancellgroup {
+  padding: 20rpx 0 40rpx 0;
+  background-color: #f2f2f2;
+}
+
+.meQuestionPage__container .vancellgroup:last-child {
+  margin-bottom: 0;
+}
+
+.meQuestionPage__container .vancell {
+  margin-bottom: 20rpx;
+}
+
+.meQuestionPage__container .btn-section {
+  width: 100%;
+  padding: 10rpx;
+  height: 100rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.meQuestionPage__container .btn-section .btn {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-family: 'PingFangSC-Semibold';
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #555;
+  letter-spacing: 1rpx;
+}
