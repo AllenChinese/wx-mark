@@ -30,7 +30,7 @@
         </view>
       </van-col>
       <van-col span="8">
-        <view class="mePage__function-item">
+        <view class="mePage__function-item" data-url="/pages/activity/activity" bind:tap="goToPage">
           <text>发起活动</text>
         </view>
       </van-col>

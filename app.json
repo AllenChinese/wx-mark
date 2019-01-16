@@ -1,13 +1,14 @@
 {
   "pages": [
-    "pages/me-question/me-question",
-    "pages/me/me",
     "pages/index/index",
     "pages/activity/activity",
     "pages/search/search",
     "pages/city/city",
+    "pages/me/me",
     "pages/me-questionnaire/me-questionnaire",
+    "pages/me-question/me-question",
     "pages/allClass/allClass",
+    "pages/createActivity/createActivity",
     "pages/activityList/activityList",
     "pages/activityDetail/activityDetail"
   ],
@@ -26,14 +27,14 @@
         "selectedIconPath": "assets/images/home_active.png"
       },
       {
-        "pagePath": "pages/activity/activity",
-        "text": "我的活动",
+        "pagePath": "pages/createActivity/createActivity",
+        "text": "发起活动",
         "iconPath": "assets/images/activity.png",
         "selectedIconPath": "assets/images/activity_active.png"
       },
       {
         "pagePath": "pages/me/me",
-        "text": "我的空间",
+        "text": "我的",
         "iconPath": "assets/images/me.png",
         "selectedIconPath": "assets/images/me_active.png"
       }

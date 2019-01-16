@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "我的活动",
+  "navigationBarTitleText": "我发起的",
   "usingComponents": {
     "van-icon": "/miniprogram_npm/vant-weapp/icon/index"
   }
