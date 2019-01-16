@@ -8,6 +8,6 @@
     <van-cell custom-class="vancell" title="单元格" label="发动机咖喱回复阿胡椒粉大黄蜂就啊好的风景姐啊点话费姐蝦的肌肤回到家卡号发几大黄蜂姐啊活动经费回到家啊回复加大回复觉得好减肥哈解放后阿交话费加厚尽快发货快" border="{{ false }}" />
   </van-cell-group>
   <view class="btn-section">
-    <view class="btn">仍有问题？加我微信</view>
+    <view class="btn" bind:tap="copy">仍有问题？加我微信</view>
   </view>
 </view>

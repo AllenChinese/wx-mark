@@ -63,5 +63,19 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  copy: function () {
+    const myWxNumber = 'zjw13402202685'
+    wx.setClipboardData({
+      data: myWxNumber,
+      success(res) {
+        wx.getClipboardData({
+          success(res) {
+            console.log(res) // data
+          }
+        })
+      }
+    })
   }
 })
