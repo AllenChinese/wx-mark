@@ -15,7 +15,25 @@
       </block>
     </swiper>
   </view>
+  <view class="activity-content">
+    <van-cell-group>
+      <van-field value="{{ activityFormData.title }}" clearable label="主题" icon="gem-o" placeholder="请输入活动主题" />
+      <van-field value="{{ activityFormData.keyword }}" clearable label="关键词" icon="notes-o" placeholder="请输入关键词" />
+      <van-field value="{{ activityFormData.address }}" clearable label="活动地点" icon="location-o" placeholder="请输入活动地点" />
+    </van-cell-group>
+    <view class="activity-content--date">
+      <view class="activity-content--date-tip">到达活动时间会有通知</view>
+      <van-cell-group>
+        <van-field value="{{ activityFormData.date }}" readonly="{{true}}" label="活动时间" icon="calender-o" placeholder="请选择活动时间" bind:tap="onDateBoxShow" />
+      </van-cell-group>
+    </view>
+  </view>
   <view class="create-activity-btn-section">
     <view class="create-activity-btn">生成活动</view>
   </view>
+  <van-action-sheet show="{{ isDateShow }}" title="请选择时间" close-on-click-overlay="{{ true }}">
+    <view>
+      <van-datetime-picker type="datetime" value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:change="onDateChange" />
+    </view>
+  </van-action-sheet>
 </view>

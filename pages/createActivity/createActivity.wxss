@@ -35,8 +35,18 @@
   height: 100%;
 }
 
+.createActivityPage__container .activity-content--date {
+  margin-top: 10rpx;
+}
+
+.createActivityPage__container .activity-content--date-tip {
+  padding: 30rpx 30rpx;
+  font-size: 24rpx;
+  color: #727272;
+}
+
 .create-activity-btn-section {
-  z-index: 999;
+  z-index: 99;
   position: fixed;
   bottom: 0;
   padding: 20rpx;

@@ -16,11 +16,17 @@ Page({
     autoplay: false,
     interval: 3000,
     duration: 1000,
-
+    isDateShow: false,
+    minHour: 10,
+    maxHour: 20,
+    minDate: new Date().getTime(),
+    maxDate: new Date(2019, 10, 1).getTime(),
+    currentDate: new Date().getTime(),
     activityFormData: {
       previewUrl: '',
       title: '',
       sponsor: '',
+      keyword: '',
       desc: '',
       address: '',
       date: ''
@@ -89,5 +95,22 @@ Page({
   changeActivityImg: function (event) {
     this.data.activityFormData.previewUrl = this.data.imgUrls[event.detail.current]
     console.log(this.data.activityFormData.previewUrl)
+  },
+
+  /**
+   * 时间切换
+   */
+  onDateChange: function (event) {
+    this.data.activityFormData.date = event.detail.value
+    console.log(this.data.activityFormData)
+  },
+
+  /**
+   * 唤起时间选择器
+   */
+  onDateBoxShow: function () {
+    this.setData({
+      isDateShow: !this.data.isDateShow
+    })
   }
 })
