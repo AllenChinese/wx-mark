@@ -6,7 +6,25 @@ Page({
    * 页面的初始数据
    */
   data: {
+    imgUrls: [
+      '../../assets/images/banner/banner1.jpeg',
+      '../../assets/images/banner/banner2.jpeg',
+      '../../assets/images/banner/banner3.jpeg',
+      '../../assets/images/banner/banner4.jpeg'
+    ],
+    indicatorDots: false,
+    autoplay: false,
+    interval: 3000,
+    duration: 1000,
 
+    activityFormData: {
+      previewUrl: '',
+      title: '',
+      sponsor: '',
+      desc: '',
+      address: '',
+      date: ''
+    }
   },
 
   /**
@@ -63,5 +81,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 改变活动底图
+   */
+  changeActivityImg: function (event) {
+    this.data.activityFormData.previewUrl = this.data.imgUrls[event.detail.current]
+    console.log(this.data.activityFormData.previewUrl)
   }
 })

@@ -131,7 +131,7 @@ page {
   color: #fff;
   font-weight: 400;
   letter-spacing: 3rpx;
-  background-color: #65c294;
+  background-color: #a061ff;
 }
 
 .activityPage__container .activity-bar--tab {

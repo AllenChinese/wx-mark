@@ -1,1 +1,21 @@
-发起活动
+<view class="createActivityPage__container">
+  <view class="tip-section">
+    <view class="tip-right tip-word">完善活动</view>
+    <view class="tip-left tip-word">
+      <van-icon custom-class="tip-voice" name="volume-o" color="#a061ff" size="12px" />
+      滑动切换活动底图
+    </view>
+  </view>
+  <view class="swiper-container">
+    <swiper indicator-dots="{{indicatorDots}}" circular="false" indicator-dots="{{true}}" indicator-active-color="#a061ff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="changeActivityImg">
+      <block wx:for="{{imgUrls}}" wx:key="item">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="create-activity-btn-section">
+    <view class="create-activity-btn">生成活动</view>
+  </view>
+</view>

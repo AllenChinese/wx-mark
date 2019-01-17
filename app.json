@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/createActivity/createActivity",
     "pages/index/index",
     "pages/activity/activity",
     "pages/search/search",
@@ -8,7 +9,6 @@
     "pages/me-questionnaire/me-questionnaire",
     "pages/me-question/me-question",
     "pages/allClass/allClass",
-    "pages/createActivity/createActivity",
     "pages/activityList/activityList",
     "pages/activityDetail/activityDetail"
   ],

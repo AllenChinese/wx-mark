@@ -1,5 +1,5 @@
 Component({
-  pageTitle: '全部活动',
+  pageTitle: '',
   data: {
     listData: [],
     curPage: 1,
@@ -14,7 +14,7 @@ Component({
    */
   attached() {
     this.setData({
-      pageTitle: wx.getStorageSync('Class').c_title
+      pageTitle: wx.getStorageSync('Class').c_title || '全部活动'
     })
     this.preferListLayout()
   },

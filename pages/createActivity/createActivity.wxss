@@ -1,0 +1,59 @@
+.createActivityPage__container {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.createActivityPage__container .tip-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 30rpx;
+}
+
+.createActivityPage__container .tip-voice {
+  margin-bottom: 3px;
+  vertical-align: bottom;
+}
+
+.createActivityPage__container .tip-word {
+  font-size: 24rpx;
+  color: #727272;
+}
+
+.createActivityPage__container .swiper-container {
+  width: 100%;
+  height: 380rpx;
+}
+
+.createActivityPage__container swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.createActivityPage__container .slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.create-activity-btn-section {
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  padding: 20rpx;
+  width: 100%;
+  height: 120rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.create-activity-btn-section .create-activity-btn {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 3rpx;
+  background-color: #a061ff;
+}
