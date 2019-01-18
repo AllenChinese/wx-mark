@@ -29,9 +29,15 @@
     </view>
   </view>
   <view class="create-activity-btn-section">
-    <view class="create-activity-btn" bind:tap="createActivityEvent">生成活动</view>
+    <view class="create-activity-btn {{isCreating ? 'active' : ''}}" bind:tap="createActivityEvent">
+      <text wx:if="{{!isCreating}}">生成活动</text>
+      <van-loading wx:if="{{isCreating}}" custom-class="custom-loading" size="14px" color="#fff" />
+      <text wx:if="{{isCreating}}" decode="{{true}}">&nbsp; 生成中...</text>
+    </view>
   </view>
   <van-popup show="{{ isDateShow }}" position="bottom" overlay="{{ true }}">
     <van-datetime-picker type="datetime" value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:confirm="onDateConfirm" bind:cancel="onDateCancel" />
   </van-popup>
 </view>
+<!-- 生成提示 -->
+<van-notify id="create-selector" />

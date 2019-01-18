@@ -1,6 +1,7 @@
 
 // pages/createActivity/createActivity.js
 import formatDateTime from '../../utils/dateTime'
+import Notify from '../../miniprogram_npm/vant-weapp/notify/notify'
 Page({
 
   /**
@@ -32,7 +33,8 @@ Page({
       desc: '',
       address: '',
       date: ''
-    }
+    },
+    isCreating: false
   },
 
   /**
@@ -143,9 +145,26 @@ Page({
    * 生成活动
    */
   createActivityEvent: function () {
-    console.log(this.data.activityFormData)
-    this.setData({
-      activityFormData: this.data.activityFormData
-    })
+    if (!this.data.isCreating) {
+      console.log(this.data.activityFormData)
+      this.setData({
+        isCreating: true
+      })
+      this.setData({
+        activityFormData: this.data.activityFormData
+      })
+    }
+    // 模拟 3s 后结束
+    setTimeout(() => {
+      this.setData({
+        isCreating: false
+      })
+      Notify({
+        text: '活动已生成，去分享给好友吧',
+        duration: 1000,
+        selector: '#create-selector',
+        backgroundColor: '#a061ff'
+      })
+    }, 3000)
   }
 })
