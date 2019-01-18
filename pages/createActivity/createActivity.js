@@ -28,9 +28,9 @@ Page({
     activityFormData: {
       previewUrl: '',
       title: '',
-      sponsor: '',
+      sponsor: '自己',
       keyword: '',
-      desc: '',
+      desc: '这是马克小程序',
       address: '',
       date: ''
     },
@@ -145,26 +145,46 @@ Page({
    * 生成活动
    */
   createActivityEvent: function () {
-    if (!this.data.isCreating) {
-      console.log(this.data.activityFormData)
-      this.setData({
-        isCreating: true
-      })
-      this.setData({
-        activityFormData: this.data.activityFormData
-      })
-    }
-    // 模拟 3s 后结束
-    setTimeout(() => {
-      this.setData({
-        isCreating: false
-      })
+    // 是否存在必填项未填
+    if (!this.checkFiledEmpty()) {
       Notify({
-        text: '活动已生成，去分享给好友吧',
+        text: '请将活动内容填写完整',
         duration: 1000,
         selector: '#create-selector',
-        backgroundColor: '#a061ff'
+        backgroundColor: '#f15a22'
       })
-    }, 3000)
+    } else {
+      if (!this.data.isCreating) {
+        this.setData({
+          isCreating: true
+        })
+        this.setData({
+          activityFormData: this.data.activityFormData
+        })
+        // 模拟 3s 后结束
+        setTimeout(() => {
+          this.setData({
+            isCreating: false
+          })
+          Notify({
+            text: '活动已生成，去分享给好友吧',
+            duration: 1000,
+            selector: '#create-selector',
+            backgroundColor: '#a061ff'
+          })
+        }, 3000)
+      }
+    }
+  },
+
+  checkFiledEmpty: function () {
+    let isNoEmpty = true
+    let formdata = this.data.activityFormData
+    for (let key in formdata) {
+      if (formdata[key] === '') {
+        isNoEmpty = false
+      }
+    }
+    return isNoEmpty
   }
 })
