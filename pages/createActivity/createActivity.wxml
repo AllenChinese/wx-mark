@@ -17,9 +17,9 @@
   </view>
   <view class="activity-content">
     <van-cell-group>
-      <van-field value="{{ activityFormData.title }}" clearable label="主题" icon="gem-o" placeholder="请输入活动主题" />
-      <van-field value="{{ activityFormData.keyword }}" clearable label="关键词" icon="notes-o" placeholder="请输入关键词" />
-      <van-field value="{{ activityFormData.address }}" clearable label="活动地点" icon="location-o" placeholder="请输入活动地点" />
+      <van-field value="{{ activityFormData.title }}" clearable label="主题" icon="gem-o" placeholder="请输入活动主题" data-key="title" bind:change="onChange" />
+      <van-field value="{{ activityFormData.keyword }}" clearable label="关键词" icon="notes-o" placeholder="请输入关键词" data-key="keyword" bind:change="onChange" />
+      <van-field value="{{ activityFormData.address }}" clearable label="活动地点" icon="location-o" placeholder="请输入活动地点" data-key="address" bind:change="onChange" />
     </van-cell-group>
     <view class="activity-content--date">
       <view class="activity-content--date-tip">到达活动时间会有通知</view>
@@ -29,11 +29,9 @@
     </view>
   </view>
   <view class="create-activity-btn-section">
-    <view class="create-activity-btn">生成活动</view>
+    <view class="create-activity-btn" bind:tap="createActivityEvent">生成活动</view>
   </view>
-  <van-action-sheet show="{{ isDateShow }}" title="请选择时间" close-on-click-overlay="{{ true }}">
-    <view>
-      <van-datetime-picker type="datetime" value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:change="onDateChange" />
-    </view>
-  </van-action-sheet>
+  <van-popup show="{{ isDateShow }}" position="bottom" overlay="{{ true }}">
+    <van-datetime-picker type="datetime" value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:confirm="onDateConfirm" bind:cancel="onDateCancel" />
+  </van-popup>
 </view>

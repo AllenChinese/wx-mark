@@ -1,11 +1,13 @@
 
 // pages/createActivity/createActivity.js
+import formatDateTime from '../../utils/dateTime'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    time: null,
     imgUrls: [
       '../../assets/images/banner/banner1.jpeg',
       '../../assets/images/banner/banner2.jpeg',
@@ -51,7 +53,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.data.activityFormData.previewUrl =
+      this.data.imgUrls[0]
   },
 
   /**
@@ -93,16 +96,25 @@ Page({
    * 改变活动底图
    */
   changeActivityImg: function (event) {
-    this.data.activityFormData.previewUrl = this.data.imgUrls[event.detail.current]
-    console.log(this.data.activityFormData.previewUrl)
+    this.data.activityFormData.previewUrl =
+      this.data.imgUrls[event.detail.current]
   },
 
   /**
-   * 时间切换
+   * 确认活动时间
    */
-  onDateChange: function (event) {
-    this.data.activityFormData.date = event.detail.value
-    console.log(this.data.activityFormData)
+  onDateConfirm: function (event) {
+    // const date = new Date(event.detail)
+    this.data.activityFormData.date = formatDateTime(event.detail)
+
+    this.setData({
+      activityFormData: this.data.activityFormData
+    })
+    this.onDateBoxShow()
+  },
+
+  onDateCancel: function () {
+    this.onDateBoxShow()
   },
 
   /**
@@ -111,6 +123,29 @@ Page({
   onDateBoxShow: function () {
     this.setData({
       isDateShow: !this.data.isDateShow
+    })
+  },
+
+  /**
+   * fild 输入框形式的触发事件
+   */
+  onChange: function (event) {
+    const that = this
+    clearTimeout(that.data.time)
+
+    that.data.time = setTimeout(() => {
+      that.data.activityFormData[event.currentTarget.dataset.key] =
+        event.detail
+    }, 300)
+  },
+
+  /**
+   * 生成活动
+   */
+  createActivityEvent: function () {
+    console.log(this.data.activityFormData)
+    this.setData({
+      activityFormData: this.data.activityFormData
     })
   }
 })
