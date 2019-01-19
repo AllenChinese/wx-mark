@@ -166,5 +166,29 @@ Page({
     wx.navigateTo({
       url: '/pages/search/search'
     })
+  },
+
+  /**
+   * 人气榜 to 活动列表
+   */
+  pageToActivityList: function (event) {
+    // save in storage
+    let Class = {
+      c_type: event.currentTarget.dataset.type,
+      c_title: event.currentTarget.dataset.title
+    }
+    wx.setStorage({
+      key: 'Class',
+      data: Class,
+      success: function () {
+        wx.navigateTo({
+          url: "/pages/activityList/activityList"
+        })
+      },
+      fail: function () {
+        // 接口调用失败
+      }
+    })
+
   }
 })

@@ -23,7 +23,7 @@
   </view>
   <!-- 快速入口 -->
   <view class="quick-container">
-    <view class="quick-item">
+    <view class="quick-item" data-title="人气榜" data-type="c_hot" bind:tap="pageToActivityList">
       <view class="quick-item--logo">
         <van-icon name="hot-o" size="50rpx" />
       </view>

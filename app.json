@@ -1,13 +1,13 @@
 {
   "pages": [
-    "pages/me-questionnaire/me-questionnaire",
-    "pages/createActivity/createActivity",
     "pages/index/index",
+    "pages/createActivity/createActivity",
     "pages/activity/activity",
     "pages/search/search",
     "pages/city/city",
     "pages/me/me",
     "pages/me-question/me-question",
+    "pages/me-questionnaire/me-questionnaire",
     "pages/allClass/allClass",
     "pages/activityList/activityList",
     "pages/activityDetail/activityDetail"
