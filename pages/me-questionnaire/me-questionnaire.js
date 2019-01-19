@@ -103,21 +103,23 @@ Page({
    * 表单提交
    */
   submitEvent: function () {
-    console.log(this.data.formdata)
-    this.data.isLoading
-    this.setData({
-      isLoading: true
-    })
-    setTimeout(() => {
+
+    if (!this.data.isLoading) { // 保证非正在提交中
       this.setData({
-        isLoading: false
+        isLoading: true
       })
-      Notify({
-        text: '提交成功，感谢您的参与',
-        duration: 1000,
-        selector: '#custom-selector',
-        backgroundColor: '#a061ff'
-      })
-    }, 2000)
+      setTimeout(() => {
+        this.setData({
+          isLoading: false
+        })
+        Notify({
+          text: '提交成功，感谢您的参与',
+          duration: 1000,
+          selector: '#custom-selector',
+          backgroundColor: '#a061ff'
+        })
+      }, 2000)
+    }
+
   }
 })

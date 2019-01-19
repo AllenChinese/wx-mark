@@ -71,7 +71,7 @@
     <van-field left-icon="records" value="{{ formdata.mind }}" data-key="mind" placeholder="写点什么吧" border="{{ true }}" bind:change="onChange" />
   </van-cell-group>
   <view class="submit-section">
-    <van-button type="default" custom-class="custom-class-submit" round="{{true}}" loading="{{isLoading}}" size="small" bind:tap="submitEvent">
+    <van-button type="default" custom-class="custom-class-submit {{isLoading ? 'active' : ''}}" round="{{true}}" loading="{{isLoading}}" size="small" bind:tap="submitEvent">
       提交
     </van-button>
   </view>
