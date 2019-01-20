@@ -151,5 +151,14 @@ Page({
     wx.navigateTo({
       url: '/pages/activityDetail/activityDetail'
     })
+  },
+
+  /**
+   * 跳转到发起活动页
+   */
+  createActivity: function () {
+    wx.switchTab({
+      url: '/pages/createActivity/createActivity'
+    })
   }
 })

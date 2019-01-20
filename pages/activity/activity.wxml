@@ -28,7 +28,7 @@
     </view>
   </view>
   <view class="activity-bar">
-    <view class="activity-bar--btn">发起活动</view>
+    <view class="activity-bar--btn" bind:tap="createActivity">发起活动</view>
     <view class="activity-bar--tab">
       <van-icon name="apps-o" custom-class="tab-ico" size="30px" />
     </view>
