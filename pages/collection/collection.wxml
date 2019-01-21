@@ -1,1 +1,19 @@
-全部收藏
+<view class="collectionPage_container">
+  <view class="common-items">
+    <!-- 一组 start -->
+    <view wx:for="{{listData}}" wx:key="{{index}}" class="horizontal-item">
+      <view class="horizontal-item--preview">
+        <image src="{{item.preview}}" />
+      </view>
+      <view>
+        <view class="horizontal-item--title">{{item.title}}</view>
+        <view class="horizontal-item--desc">{{item.desc}}</view>
+        <view class="horizontal-item--msg">
+          <text class="address">{{item.address}}</text>
+          <text class="date">{{item.date}}{{item.week}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 一组 end -->
+  </view>
+</view>

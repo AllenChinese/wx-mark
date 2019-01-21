@@ -3,7 +3,72 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    listData: [
+      {
+        preview: '../../assets/images/banner/banner1.jpeg',
+        title: '声音腾讯技术公开日成都站',
+        desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
+        address: '浙江杭州',
+        date: '01/11',
+        week: '周六'
+      },
+      {
+        preview: '../../assets/images/banner/banner1.jpeg',
+        title: '声音腾讯技术公开日成都站',
+        desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
+        address: '浙江杭州',
+        date: '01/11',
+        week: '周六'
+      },
+      {
+        preview: '../../assets/images/banner/banner1.jpeg',
+        title: '声音腾讯技术公开日成都站',
+        desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
+        address: '浙江杭州',
+        date: '01/11',
+        week: '周六'
+      },
+      {
+        preview: '../../assets/images/banner/banner1.jpeg',
+        title: '声音腾讯技术公开日成都站',
+        desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
+        address: '浙江杭州',
+        date: '01/11',
+        week: '周六'
+      },
+      {
+        preview: '../../assets/images/banner/banner1.jpeg',
+        title: '声音腾讯技术公开日成都站',
+        desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
+        address: '浙江杭州',
+        date: '01/11',
+        week: '周六'
+      },
+      {
+        preview: '../../assets/images/banner/banner1.jpeg',
+        title: '声音腾讯技术公开日成都站',
+        desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
+        address: '浙江杭州',
+        date: '01/11',
+        week: '周六'
+      },
+      {
+        preview: '../../assets/images/banner/banner1.jpeg',
+        title: '声音腾讯技术公开日成都站',
+        desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
+        address: '浙江杭州',
+        date: '01/11',
+        week: '周六'
+      },
+      {
+        preview: '../../assets/images/banner/banner1.jpeg',
+        title: '声音腾讯技术公开日成都站',
+        desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
+        address: '浙江杭州',
+        date: '01/11',
+        week: '周六'
+      }
+    ]
   },
 
   /**

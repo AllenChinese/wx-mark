@@ -1,1 +1,21 @@
+@import "../../style/list.wxss";
+@import "../../style/common.wxss";
+.collectionPage_container {
+  padding: 15rpx 0;
+  background-color: #f2f2f2;
+}
 
+.collectionPage_container .horizontal-item {
+  margin-bottom: 30rpx;
+  padding: 20rpx;
+  border: none;
+  background-color: #fff;
+}
+
+.collectionPage_container .horizontal-item image {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}

@@ -44,7 +44,7 @@
   <!-- mePage__cell-part -->
   <view class="mePage__cell-part">
     <van-cell-group>
-      <van-cell icon="star-o" title="活动收藏" value="内容" is-link />
+      <van-cell icon="star-o" title="活动收藏" value="内容" is-link data-url="/pages/collection/collection" bind:tap="goToPage" />
       <van-cell border="{{ false }}" icon="point-gift-o" title="活动心愿池" value="内容" border="{{ false }}" is-link />
     </van-cell-group>
     <van-cell-group custom-class="second-cell">
