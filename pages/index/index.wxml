@@ -36,10 +36,12 @@
       <view class="quick-item--name">活动日历</view>
     </view>
     <view class="quick-item">
-      <view class="quick-item--logo">
-        <van-icon name="like-o" size="50rpx" />
-      </view>
-      <view class="quick-item--name">收藏</view>
+      <navigator url="/pages/collection/collection" hover-class="none">
+        <view class="quick-item--logo">
+          <van-icon name="like-o" size="50rpx" />
+        </view>
+        <view class="quick-item--name">收藏</view>
+      </navigator>
     </view>
     <view class="quick-item">
       <view class="quick-item--logo">
