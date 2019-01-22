@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/collection/collection",
     "pages/index/index",
     "pages/createActivity/createActivity",
     "pages/activity/activity",
@@ -10,8 +11,7 @@
     "pages/me-questionnaire/me-questionnaire",
     "pages/allClass/allClass",
     "pages/activityList/activityList",
-    "pages/activityDetail/activityDetail",
-    "pages/collection/collection"
+    "pages/activityDetail/activityDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

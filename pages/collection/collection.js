@@ -10,7 +10,8 @@ Page({
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
         address: '浙江杭州',
         date: '01/11',
-        week: '周六'
+        week: '周六',
+        isExpired: false
       },
       {
         preview: '../../assets/images/banner/banner1.jpeg',
@@ -18,7 +19,8 @@ Page({
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
         address: '浙江杭州',
         date: '01/11',
-        week: '周六'
+        week: '周六',
+        isExpired: false
       },
       {
         preview: '../../assets/images/banner/banner1.jpeg',
@@ -26,7 +28,8 @@ Page({
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
         address: '浙江杭州',
         date: '01/11',
-        week: '周六'
+        week: '周六',
+        isExpired: false
       },
       {
         preview: '../../assets/images/banner/banner1.jpeg',
@@ -34,7 +37,8 @@ Page({
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
         address: '浙江杭州',
         date: '01/11',
-        week: '周六'
+        week: '周六',
+        isExpired: false
       },
       {
         preview: '../../assets/images/banner/banner1.jpeg',
@@ -42,7 +46,8 @@ Page({
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
         address: '浙江杭州',
         date: '01/11',
-        week: '周六'
+        week: '周六',
+        isExpired: false
       },
       {
         preview: '../../assets/images/banner/banner1.jpeg',
@@ -50,7 +55,8 @@ Page({
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
         address: '浙江杭州',
         date: '01/11',
-        week: '周六'
+        week: '周六',
+        isExpired: true
       },
       {
         preview: '../../assets/images/banner/banner1.jpeg',
@@ -58,7 +64,8 @@ Page({
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
         address: '浙江杭州',
         date: '01/11',
-        week: '周六'
+        week: '周六',
+        isExpired: true
       },
       {
         preview: '../../assets/images/banner/banner1.jpeg',
@@ -66,7 +73,8 @@ Page({
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
         address: '浙江杭州',
         date: '01/11',
-        week: '周六'
+        week: '周六',
+        isExpired: true
       }
     ]
   },

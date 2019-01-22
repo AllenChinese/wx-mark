@@ -6,6 +6,7 @@
 }
 
 .collectionPage_container .horizontal-item {
+  position: relative;
   margin-bottom: 30rpx;
   padding: 20rpx;
   border: none;
@@ -18,4 +19,28 @@
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
+}
+
+.collectionPage_container .expired-logo {
+  position: absolute;
+  top: 53%;
+  right: 40rpx;
+  border-radius: 50%;
+  border: 4rpx solid #ed1941;
+  width: 120rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  letter-spacing: 2rpx;
+  font-size: 40rpx;
+  color: #ed1941;
+  transform: translate3d(0, -50%, 0) rotateZ(45deg);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translate3d(0, -50%, 0) rotateZ(45deg);
+  -moz-transform: translate3d(0, -50%, 0) rotateZ(45deg);
+  -ms-transform: translate3d(0, -50%, 0) rotateZ(45deg);
+  -o-transform: translate3d(0, -50%, 0) rotateZ(45deg);
 }

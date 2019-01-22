@@ -12,6 +12,7 @@
           <text class="address">{{item.address}}</text>
           <text class="date">{{item.date}}{{item.week}}</text>
         </view>
+        <view class="expired-logo">过期</view>
       </view>
     </view>
     <!-- 一组 end -->
