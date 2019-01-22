@@ -1,5 +1,8 @@
 <view class="module-list-part">
-  <view class="common-title">{{pageTitle}}</view>
+  <view class="common-top">
+    <view class="common-current-title {{isFirstTitle ? 'active' : ''}}">{{pageTitle}}</view>
+    <view class="common-laster {{!isFirstTitle ? 'active' : ''}}">最新</view>
+  </view>
   <view class="common-items">
     <!-- 一组 start -->
     <view wx:for="{{listData}}" wx:key="{{index}}" class="{{item.isVer ? 'vertical-item' : 'horizontal-item'}}">

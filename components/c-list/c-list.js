@@ -4,7 +4,8 @@ Component({
     listData: [],
     curPage: 1,
     canLoad: true,
-    dataLess: false
+    dataLess: false,
+    isFirstTitle: true
   },
   created() {
 

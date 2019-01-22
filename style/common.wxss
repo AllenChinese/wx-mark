@@ -65,9 +65,26 @@ body {
   color: #1aa2fe;
 }
 
-.common-title {
+.common-top {
+  display: flex;
+  align-items: center;
+}
+
+.common-title,
+.common-laster.active,
+.common-current-title.active {
   font-size: 36rpx;
   font-weight: 500;
+}
+
+.common-laster,
+.common-current-title {
+  font-size: 26rpx;
+  font-weight: 500;
+}
+
+.common-current-title {
+  margin-right: 20rpx;
 }
 
 .isShow {
