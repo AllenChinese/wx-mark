@@ -1,0 +1,94 @@
+@import "../../style/common.wxss";
+.rankPage__container {
+  padding: 15rpx 0;
+}
+
+.top-tips {
+  padding: 10rpx 0;
+  text-align: center;
+  font-size: 24rpx;
+  background-color: #f2f2f2;
+}
+
+.rank-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+
+.name {
+  font-size: 30rpx;
+}
+
+.msg {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #727272;
+}
+
+.rank-me-right {
+  border-radius: 50rpx;
+  width: 160rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #1aa2fe;
+  -webkit-border-radius: 50rpx;
+  -moz-border-radius: 50rpx;
+  -ms-border-radius: 50rpx;
+  -o-border-radius: 50rpx;
+  background-color: #f2f2f2;
+}
+
+.rank-content {
+  padding: 35rpx 30rpx;
+}
+
+.rank-content .rank-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.rank-item--num {
+  margin-right: 30rpx;
+  font-size: 24rpx;
+}
+
+.rank-item--preview {
+  display: flex;
+  align-items: center;
+  margin-right: 30rpx;
+}
+
+.rank-item--preview image {
+  border-radius: 50%;
+  width: 60rpx;
+  height: 60rpx;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.rank-item--name {
+  font-size: 28rpx;
+  letter-spacing: 1rpx;
+}
+
+.rank-item--point {
+  position: absolute;
+  right: 0;
+  font-size: 26rpx;
+  color: #727272;
+}
+
+.bottom-tips {
+  text-align: center;
+  font-size: 24rpx;
+  color: #727272;
+}

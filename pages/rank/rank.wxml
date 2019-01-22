@@ -1,0 +1,23 @@
+<view class="rankPage__container">
+  <view class="top-tips">每周日晚24时结算</view>
+  <view class="rank-me">
+    <view class="rank-me-left">
+      <view class="name">{{me.name}}</view>
+      <view class="msg">第{{me.rank}}名 累计{{me.point}}马克</view>
+    </view>
+    <view class="rank-me-right">兑换区</view>
+  </view>
+  <view class="rank-content">
+    <ul class="rank-items">
+      <li class="rank-item" wx:for="{{rankList}}" wx:key="{{item.id}}">
+        <view class="rank-item--num">{{index + 1}}</view>
+        <view class="rank-item--preview">
+          <image src="{{item.preview}}" alt="" />
+        </view>
+        <view class="rank-item--name">{{item.name}}</view>
+        <view class="rank-item--point">累计{{item.point}}马克</view>
+      </li>
+    </ul>
+    <view class="bottom-tips">64位好友</view>
+  </view>
+</view>

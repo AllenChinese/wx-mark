@@ -35,7 +35,7 @@
         </view>
       </van-col>
       <van-col span="8">
-        <view class="mePage__function-item no-border">
+        <view class="mePage__function-item no-border" data-url="/pages/rank/rank" bind:tap="goToPage">
           <text>等级排行</text>
         </view>
       </van-col>
