@@ -44,10 +44,12 @@
       </navigator>
     </view>
     <view class="quick-item">
-      <view class="quick-item--logo">
-        <van-icon name="medel-o" size="50rpx" />
-      </view>
-      <view class="quick-item--name">好友周榜</view>
+      <navigator url="/pages/rank/rank" hover-class="none">
+        <view class="quick-item--logo">
+          <van-icon name="medel-o" size="50rpx" />
+        </view>
+        <view class="quick-item--name">好友周榜</view>
+      </navigator>
     </view>
   </view>
   <!-- 为你推荐 -->
