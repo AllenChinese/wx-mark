@@ -10,7 +10,23 @@
   margin-bottom: 30rpx;
   padding: 20rpx;
   border: none;
+  border-radius: 0;
   background-color: #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.movableArea {
+  width: calc(100vw - 120rpx);
+  height: 240rpx;
+}
+
+.movableView {
+  width: 100vw;
+  height: 240rpx;
+  z-index: 99;
 }
 
 .collectionPage_container .horizontal-item image {
@@ -43,4 +59,17 @@
   -moz-transform: translate3d(0, -50%, 0) rotateZ(45deg);
   -ms-transform: translate3d(0, -50%, 0) rotateZ(45deg);
   -o-transform: translate3d(0, -50%, 0) rotateZ(45deg);
+}
+
+.horizontal-item-delete {
+  position: absolute;
+  top: 0;
+  right: -120rpx;
+  width: 120rpx;
+  height: 240rpx;
+  line-height: 240rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #ed1941;
 }

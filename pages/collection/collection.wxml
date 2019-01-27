@@ -1,19 +1,26 @@
 <view class="collectionPage_container">
   <view class="common-items">
     <!-- 一组 start -->
-    <view wx:for="{{listData}}" wx:key="{{index}}" class="horizontal-item">
-      <view class="horizontal-item--preview">
-        <image src="{{item.preview}}" />
-      </view>
-      <view>
-        <view class="horizontal-item--title">{{item.title}}</view>
-        <view class="horizontal-item--desc">{{item.desc}}</view>
-        <view class="horizontal-item--msg">
-          <text class="address">{{item.address}}</text>
-          <text class="date">{{item.date}}{{item.week}}</text>
-        </view>
-        <view class="expired-logo" wx:if="{{item.isExpired}}">过期</view>
-      </view>
+    <view style="position: relative;" wx:for="{{listData}}" wx:key="{{index}}">
+      <movable-area class="movableArea">
+        <movable-view class="movableView" out-of-bounds="true" inertia="true" direction="horizontal" x="{{item.xmove}}" data-productIndex="{{index}}" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd" bindchange="handleMovableChange">
+          <view class="horizontal-item">
+            <view class="horizontal-item--preview">
+              <image src="{{item.preview}}" />
+            </view>
+            <view>
+              <view class="horizontal-item--title">{{item.title}}</view>
+              <view class="horizontal-item--desc">{{item.desc}}</view>
+              <view class="horizontal-item--msg">
+                <text class="address">{{item.address}}</text>
+                <text class="date">{{item.date}}{{item.week}}</text>
+              </view>
+              <view class="expired-logo" wx:if="{{item.isExpired}}">过期</view>
+            </view>
+          </view>
+        </movable-view>
+      </movable-area>
+      <view class="horizontal-item-delete">删除</view>
     </view>
     <!-- 一组 end -->
   </view>

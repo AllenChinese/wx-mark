@@ -133,5 +133,69 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 显示删除按钮
+   */
+  showDeleteButton: function (e) {
+    let productIndex = e.currentTarget.dataset.productindex
+    this.setXmove(productIndex, -65)
+  },
+
+  /**
+   * 隐藏删除按钮
+   */
+  hideDeleteButton: function (e) {
+    let productIndex = e.currentTarget.dataset.productindex
+
+    this.setXmove(productIndex, 0)
+  },
+
+  /**
+   * 设置movable-view位移
+   */
+  setXmove: function (productIndex, xmove) {
+    let listData = this.data.listData
+    listData[productIndex].xmove = xmove
+
+    this.setData({
+      listData: listData
+    })
+  },
+
+  /**
+   * 处理movable-view移动事件
+   */
+  handleMovableChange: function (e) {
+    if (e.detail.source === 'friction') {
+      if (e.detail.x < -30) {
+        this.showDeleteButton(e)
+      } else {
+        this.hideDeleteButton(e)
+      }
+    } else if (e.detail.source === 'out-of-bounds' && e.detail.x === 0) {
+      this.hideDeleteButton(e)
+    }
+  },
+
+  /**
+   * 处理touchstart事件
+   */
+  handleTouchStart(e) {
+    this.startX = e.touches[0].pageX
+  },
+
+  /**
+   * 处理touchend事件
+   */
+  handleTouchEnd(e) {
+    if (e.changedTouches[0].pageX < this.startX && e.changedTouches[0].pageX - this.startX <= -30) {
+      this.showDeleteButton(e)
+    } else if (e.changedTouches[0].pageX > this.startX && e.changedTouches[0].pageX - this.startX < 30) {
+      this.showDeleteButton(e)
+    } else {
+      this.hideDeleteButton(e)
+    }
   }
 })
