@@ -1,5 +1,6 @@
 <view class="collectionPage_container">
-  <view class="common-items">
+  <view class="nothing-tip" wx:if="{{!listData.length}}">空空如也，快去看看你喜欢的活动吧</view>
+  <view class="common-items" wx:if="{{listData.length}}">
     <!-- 一组 start -->
     <view style="position: relative;" wx:for="{{listData}}" wx:key="{{index}}">
       <movable-area class="movableArea">

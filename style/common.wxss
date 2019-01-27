@@ -110,3 +110,17 @@ body {
   font-weight: 300;
   color: #d2d2d2;
 }
+
+.nothing-tip {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 420rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 300;
+  color: #d2d2d2;
+  background-color: #fff;
+}

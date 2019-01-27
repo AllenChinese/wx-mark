@@ -1,8 +1,13 @@
 @import "../../style/list.wxss";
 @import "../../style/common.wxss";
 .collectionPage_container {
-  padding: 15rpx 0;
+  /* padding: 15rpx 0; */
   background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.collectionPage_container .common-items {
+  margin: 15rpx 0;
 }
 
 .collectionPage_container .horizontal-item {
