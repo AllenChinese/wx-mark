@@ -20,7 +20,9 @@
           </view>
         </movable-view>
       </movable-area>
-      <view class="horizontal-item-delete">删除</view>
+      <view class="horizontal-item-delete" data-id="{{item.id}}" bind:tap="handleDeleteProduct">
+        删除
+      </view>
     </view>
     <!-- 一组 end -->
   </view>

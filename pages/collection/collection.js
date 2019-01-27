@@ -5,6 +5,7 @@ Page({
   data: {
     listData: [
       {
+        id: 1,
         preview: '../../assets/images/banner/banner1.jpeg',
         title: '声音腾讯技术公开日成都站',
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
@@ -14,6 +15,7 @@ Page({
         isExpired: false
       },
       {
+        id: 2,
         preview: '../../assets/images/banner/banner1.jpeg',
         title: '声音腾讯技术公开日成都站',
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
@@ -23,6 +25,7 @@ Page({
         isExpired: false
       },
       {
+        id: 3,
         preview: '../../assets/images/banner/banner1.jpeg',
         title: '声音腾讯技术公开日成都站',
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
@@ -32,6 +35,7 @@ Page({
         isExpired: false
       },
       {
+        id: 4,
         preview: '../../assets/images/banner/banner1.jpeg',
         title: '声音腾讯技术公开日成都站',
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
@@ -41,6 +45,7 @@ Page({
         isExpired: false
       },
       {
+        id: 5,
         preview: '../../assets/images/banner/banner1.jpeg',
         title: '声音腾讯技术公开日成都站',
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
@@ -50,6 +55,7 @@ Page({
         isExpired: false
       },
       {
+        id: 6,
         preview: '../../assets/images/banner/banner1.jpeg',
         title: '声音腾讯技术公开日成都站',
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
@@ -59,6 +65,7 @@ Page({
         isExpired: true
       },
       {
+        id: 8,
         preview: '../../assets/images/banner/banner1.jpeg',
         title: '声音腾讯技术公开日成都站',
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
@@ -68,6 +75,7 @@ Page({
         isExpired: true
       },
       {
+        id: 9,
         preview: '../../assets/images/banner/banner1.jpeg',
         title: '声音腾讯技术公开日成都站',
         desc: '声音腾讯技术公开日成都站声音腾讯技术公开日成都站',
@@ -77,62 +85,6 @@ Page({
         isExpired: true
       }
     ]
-  },
-
-  /**
-   * 生命周期函数——监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数——监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数——监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数——监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
- * 生命周期函数--监听页面卸载
- */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
   },
 
   /**
@@ -148,7 +100,6 @@ Page({
    */
   hideDeleteButton: function (e) {
     let productIndex = e.currentTarget.dataset.productindex
-
     this.setXmove(productIndex, 0)
   },
 
@@ -196,6 +147,24 @@ Page({
       this.showDeleteButton(e)
     } else {
       this.hideDeleteButton(e)
+    }
+  },
+
+  /**
+   * 删除产品
+   */
+  handleDeleteProduct: function ({ currentTarget: { dataset: { id } } }) {
+    let listData = this.data.listData
+    let productIndex = listData.findIndex(item => item.id === id)
+
+    listData.splice(productIndex, 1)
+
+    this.setData({
+      listData
+    })
+
+    if (listData[productIndex]) {
+      this.setXmove(productIndex, 0)
     }
   }
 })
