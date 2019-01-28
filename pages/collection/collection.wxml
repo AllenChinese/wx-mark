@@ -4,7 +4,7 @@
     <!-- 一组 start -->
     <view style="position: relative;" wx:for="{{listData}}" wx:key="{{index}}">
       <movable-area class="movableArea">
-        <movable-view class="movableView" out-of-bounds="true" inertia="true" direction="horizontal" x="{{item.xmove}}" data-productIndex="{{index}}" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd" bindchange="handleMovableChange">
+        <movable-view class="movableView" out-of-bounds="false" inertia="true" direction="horizontal" x="{{item.xmove}}" data-productIndex="{{index}}" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd" bindchange="handleMovableChange">
           <view class="horizontal-item">
             <view class="horizontal-item--preview">
               <image src="{{item.preview}}" />

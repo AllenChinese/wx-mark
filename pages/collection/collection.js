@@ -120,7 +120,7 @@ Page({
    */
   handleMovableChange: function (e) {
     if (e.detail.source === 'friction') {
-      if (e.detail.x < -30) {
+      if (e.detail.x < -60) {
         this.showDeleteButton(e)
       } else {
         this.hideDeleteButton(e)
@@ -141,9 +141,9 @@ Page({
    * 处理touchend事件
    */
   handleTouchEnd(e) {
-    if (e.changedTouches[0].pageX < this.startX && e.changedTouches[0].pageX - this.startX <= -30) {
+    if (e.changedTouches[0].pageX < this.startX && e.changedTouches[0].pageX - this.startX <= -60) {
       this.showDeleteButton(e)
-    } else if (e.changedTouches[0].pageX > this.startX && e.changedTouches[0].pageX - this.startX < 30) {
+    } else if (e.changedTouches[0].pageX > this.startX && e.changedTouches[0].pageX - this.startX < 60) {
       this.showDeleteButton(e)
     } else {
       this.hideDeleteButton(e)

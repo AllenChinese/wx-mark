@@ -4,19 +4,22 @@
   <view class="mePage__userMsg-part">
     <view class="mePage_userMsg-content">
       <van-row>
-        <van-col span="8" offset="2">
-          <image class="mePage__person-img" mode src="../../assets/images/cat.jpeg"></image>
-        </van-col>
-        <van-col span="14">
+        <van-col span="16">
           <view class="mePage_msg">
             <view class="mePage_msg--name">
               <text>清风少年风清扬</text>
             </view>
             <view class="mePage_msg--level">
               <text decode="{{true}}">等级:&nbsp;</text>
-              <text>party 大师</text>
+              <text>大师</text>
+            </view>
+            <view class="mePage_msg--total">
+              <text>14 个活动</text>
             </view>
           </view>
+        </van-col>
+        <van-col span="6" offset="2">
+          <image class="mePage__person-img" mode src="../../assets/images/cat.jpeg"></image>
         </van-col>
       </van-row>
     </view>
