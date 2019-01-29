@@ -1,1 +1,53 @@
-<text>活动详情页 包含个人活动和商业活动</text>
+<view class="detailPage__container">
+  <view class="preview">
+    <image src="{{activity.preview}}" />
+  </view>
+  <view class="msg">
+    <view class="msg-line-one">
+      <view class="msg-read">
+        <van-icon custom-style="padding-bottom: 2px;vertical-align: middle;" name="eye-o" />
+        <text decode="{{true}}">&nbsp;{{activity.read}}</text>
+      </view>
+      <view class="msg-collection">
+        <van-icon custom-style="padding-bottom: 2px;vertical-align: middle;" name="star-o" />
+        <text decode="{{true}}">&nbsp;{{activity.collection}}</text>
+      </view>
+    </view>
+    <view class="msg-line-two">{{activity.title}}</view>
+    <view class="msg-line-three">
+      <view class="msg-desc">{{activity.desc}}</view>
+      <view class="msg-time">活动时间：{{activity.time}}</view>
+      <view class="msg-location">活动地点：{{activity.location}}</view>
+    </view>
+  </view>
+  <view class="msg-detail">
+    <rich-text decode="{{true}}">
+      <p>首先是定机票。</p>
+      <br />
+      <p>在航班选择上，我首选大韩航空。</p>
+      <br />
+      <p>原因有二：</p>
+      <br />
+      <p>一是情结问题。毕竟关注 韩国 电影很长时间了，这个国家在我心中已经是一个很亲近的地方，理所当然选择本国的航空公司；</p>
+      <br />
+      <p>二是服务和安全问题。相对于 天津 出发的廉航，不能说不好，但服务和整体上和大韩航空还是有距离的。而国航东方航空机票比大韩航空还贵，根本没考虑。</p>
+      <br />
+      <p>之后，就是购票。我对比了一些代理公司，最后在大韩航空官网注册会员后定的往返票，优惠了一点，还是蛮合适的。</p>
+      <br />
+      <p>官网每日的票价也不太一样，所以购票前关注了一段时间，天天刷票，找最便宜的时间。最终于出发前十天左右定下6月27日至7月2日的三张机票，同时到当时预留的邮箱里打印了电子机票。</p>
+      <br />
+      <p>其次是定酒店。</p>
+      <br />
+      <p>考虑老妈和女儿的关注点，我选择了新济州的莲洞商圈。</p>
+      <br />
+      <p>出于安全考虑，最终在韩巢网定的格兰德酒店。</p>
+      <br />
+      <p>酒店位置很不错，斜对面就是新罗免税店。</p>
+      <br />
+      <p>附近吃饭的地方也挺多，离宝健路也超近，易买得超市稍远一些。</p>
+      <br />
+      <p>同时打印入住确认单以备入关时边检核查和入住时酒店确认。</p>
+      <br />
+    </rich-text>
+  </view>
+</view>
