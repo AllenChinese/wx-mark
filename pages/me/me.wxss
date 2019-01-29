@@ -123,8 +123,9 @@
   margin: 150rpx auto 0;
   width: 220rpx;
   text-align: center;
-  font-size: 32rpx;
-  color: #b2b2b2;
+  font-size: 28rpx;
+  font-weight: 300;
+  color: #d2d2d2;
   background-color: #fff;
 }
 
@@ -136,5 +137,5 @@
   left: -40rpx;
   width: 300rpx;
   height: 2rpx;
-  background-color: #000;
+  background-color: #d2d2d2;
 }
