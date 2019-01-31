@@ -10,17 +10,17 @@
         <van-col span="12">
           <view class="mePage_msg">
             <view class="mePage_msg--personal">
-              <text class="personal_name">梧桐小七</text>
+              <text class="personal_name">{{me.name}}</text>
               <van-icon custom-class="personal_model" size="24rpx" name="medel-o" />
             </view>
             <view class="mePage_msg--saying">
-              <text>人生如逆旅，我亦是行人。</text>
+              <text>{{me.saying}}</text>
             </view>
           </view>
         </van-col>
         <van-col custom-class="mePage_msg--checkin-col" span="6">
-          <view class="mePage_msg--checkin active">
-            <text>已签到</text>
+          <view class="mePage_msg--checkin {{me.isChecked ? 'active' : ''}}" bind:tap="checkInClick">
+            <text>{{me.isChecked ? '已签到' : '签到'}}</text>
           </view>
         </van-col>
       </van-row>

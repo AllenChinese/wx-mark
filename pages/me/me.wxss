@@ -8,13 +8,10 @@
   height: 250rpx;
   line-height: 250rpx;
   font-size: 28rpx;
-  /* background: url('http://pic.97uimg.com/back_pic/00/00/40/82/1dc98cc63a90b31b910bcbd4f5498a1a.jpg') no-repeat 0 0; */
-  /* background: url('http://img.vice.cn/contentimage/34039/147132854597c93a52413a9969e370cddc515dc4e5.jpg') no-repeat 0 0; */
 }
 
 .mePage_userMsg-content {
   padding: 0 40rpx;
-  /* background-color: rgba(0, 0, 0, .5); */
 }
 
 .mePage__person-img {

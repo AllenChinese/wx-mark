@@ -6,7 +6,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    me: {
+      name: '梧桐小七',
+      saying: '人生如逆旅，我亦是行人。',
+      isChecked: false
+    }
   },
 
   /**
@@ -63,6 +67,20 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 签到事件
+   */
+  checkInClick: function () {
+    if (!this.data.me.isChecked) {
+      // 发送请求
+      // 加积分
+      this.data.me.isChecked = true
+      this.setData({
+        me: this.data.me
+      })
+    }
   },
 
   goToPage: function (event) {
