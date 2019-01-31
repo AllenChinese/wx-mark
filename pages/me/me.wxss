@@ -5,17 +5,16 @@
 /* 用户信息 */
 
 .mePage__userMsg-part {
-  height: 360rpx;
-  line-height: 360rpx;
+  height: 250rpx;
+  line-height: 250rpx;
   font-size: 28rpx;
-  background: url('http://pic.97uimg.com/back_pic/00/00/40/82/1dc98cc63a90b31b910bcbd4f5498a1a.jpg') no-repeat 0 0;
+  /* background: url('http://pic.97uimg.com/back_pic/00/00/40/82/1dc98cc63a90b31b910bcbd4f5498a1a.jpg') no-repeat 0 0; */
   /* background: url('http://img.vice.cn/contentimage/34039/147132854597c93a52413a9969e370cddc515dc4e5.jpg') no-repeat 0 0; */
 }
 
 .mePage_userMsg-content {
-  /* width: 100%; */
   padding: 0 40rpx;
-  background-color: rgba(0, 0, 0, .5);
+  /* background-color: rgba(0, 0, 0, .5); */
 }
 
 .mePage__person-img {
@@ -25,8 +24,8 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  width: 180rpx;
-  height: 180rpx;
+  width: 140rpx;
+  height: 140rpx;
   vertical-align: middle;
   box-shadow: 0 0 10rpx 2rpx rgba(255, 255, 255, .8);
 }
@@ -35,7 +34,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 110rpx;
+  margin-top: 75rpx;
 }
 
 .mePage_msg view {
@@ -44,40 +43,86 @@
   line-height: 50rpx;
 }
 
-.mePage_msg .mePage_msg--name {
+.mePage_msg .mePage_msg--personal {
+  display: flex;
+  margin-bottom: 18rpx;
   font-family: 'PingFangSC-Semibold';
-  font-size: 32rpx;
-  color: #fff;
+  font-size: 36rpx;
+  color: #c2c2c2;
 }
 
-.mePage_msg .mePage_msg--level,
-.mePage_msg .mePage_msg--total {
+.mePage_msg .mePage_msg--personal .personal_model {
+  margin-left: 10rpx;
+  vertical-align: middle;
+}
+
+.mePage_msg .mePage_msg--personal .personal_level {
+  padding-top: 5rpx;
+  font-size: 24rpx;
+  font-family: 'PingFangSC-Regular';
+}
+
+.mePage_msg .mePage_msg--saying {
+  line-height: 24rpx;
   font-family: 'PingFangSC-Regular';
   font-size: 26rpx;
   color: #c2c2c2;
 }
 
-.mePage_msg .mePage_msg--total {
-  margin-top: 45rpx;
+.mePage_msg--checkin-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mePage_userMsg-content .mePage_msg--checkin {
+  margin: 90rpx 0 0 0;
+  border-radius: 30rpx;
+  border: 1px solid #ed1941;
+  width: 90rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
   font-size: 24rpx;
+  -webkit-border-radius: 30rpx;
+  -moz-border-radius: 30rpx;
+  -ms-border-radius: 30rpx;
+  -o-border-radius: 30rpx;
+  color: #ed1941;
+}
+
+.mePage_userMsg-content .mePage_msg--checkin.active {
+  border-color: #c2c2c2;
+  color: #c2c2c2;
+}
+
+.mePage_userMsg-content .mePage_msg--total {
+  margin: 15rpx 0 0 60rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  color: #525252;
 }
 
 .mePage__function-part {
-  margin: 30rpx auto;
+  margin: 10rpx auto 50rpx;
+  padding-top: 20rpx;
+  width: 90%;
+  box-shadow: 0 5rpx 30rpx 0 #f2f2f2;
 }
 
 .mePage__function-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .mePage__function-part .icon {
   border-radius: 50%;
-  width: 100rpx;
-  height: 100rpx;
-  line-height: 100rpx;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -107,7 +152,7 @@
   width: 100%;
   height: 80rpx;
   line-height: 80rpx;
-  font-size: 28rpx;
+  font-size: 26rpx;
 }
 
 .second-cell {

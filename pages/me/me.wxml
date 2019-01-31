@@ -4,22 +4,24 @@
   <view class="mePage__userMsg-part">
     <view class="mePage_userMsg-content">
       <van-row>
-        <van-col span="16">
+        <van-col span="6">
+          <image class="mePage__person-img" mode src="../../assets/images/cat.jpeg"></image>
+        </van-col>
+        <van-col span="12">
           <view class="mePage_msg">
-            <view class="mePage_msg--name">
-              <text>清风少年风清扬</text>
+            <view class="mePage_msg--personal">
+              <text class="personal_name">梧桐小七</text>
+              <van-icon custom-class="personal_model" size="24rpx" name="medel-o" />
             </view>
-            <view class="mePage_msg--level">
-              <text decode="{{true}}">等级:&nbsp;</text>
-              <text>大师</text>
-            </view>
-            <view class="mePage_msg--total">
-              <text>14 个活动</text>
+            <view class="mePage_msg--saying">
+              <text>人生如逆旅，我亦是行人。</text>
             </view>
           </view>
         </van-col>
-        <van-col span="6" offset="2">
-          <image class="mePage__person-img" mode src="../../assets/images/cat.jpeg"></image>
+        <van-col custom-class="mePage_msg--checkin-col" span="6">
+          <view class="mePage_msg--checkin active">
+            <text>已签到</text>
+          </view>
         </van-col>
       </van-row>
     </view>
