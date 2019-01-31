@@ -6,25 +6,20 @@
       滑动切换活动底图
     </view>
   </view>
-  <view class="swiper-container">
-    <swiper indicator-dots="{{indicatorDots}}" circular="false" indicator-dots="{{true}}" indicator-active-color="#a061ff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="changeActivityImg">
-      <block wx:for="{{imgUrls}}" wx:key="item">
-        <swiper-item>
-          <image src="{{item}}" class="slide-image" />
-        </swiper-item>
-      </block>
-    </swiper>
+  <view class="preview-container">
+    <view class="preview-change-btn" bind:tap="showPreviewSwiper">更换背景图片</view>
+    <image class="preview" src="{{activityFormData.previewUrl || defaultPreview }}" />
   </view>
   <view class="activity-content">
     <van-cell-group>
-      <van-field value="{{ activityFormData.title }}" required clearable label="主题" icon="gem-o" placeholder="请输入活动主题" data-key="title" bind:change="onChange" />
-      <van-field value="{{ activityFormData.keyword }}" required clearable label="关键词" icon="notes-o" placeholder="请输入关键词" data-key="keyword" bind:change="onChange" />
-      <van-field value="{{ activityFormData.address }}" required clearable label="活动地点" icon="location-o" placeholder="请输入活动地点" data-key="address" bind:change="onChange" />
+      <van-field value="{{ activityFormData.title }}" clearable label="主题" icon="gem-o" placeholder="请输入活动主题" data-key="title" bind:change="onChange" />
+      <van-field value="{{ activityFormData.keyword }}" clearable label="关键词" icon="notes-o" placeholder="请输入关键词" data-key="keyword" bind:change="onChange" />
+      <van-field value="{{ activityFormData.address }}" clearable label="活动地点" icon="location-o" placeholder="请输入活动地点" data-key="address" bind:change="onChange" />
     </van-cell-group>
     <view class="activity-content--date">
       <view class="activity-content--date-tip">到达活动时间会有通知</view>
       <van-cell-group>
-        <van-field value="{{ activityFormData.date }}" required readonly="{{true}}" label="活动时间" icon="calender-o" placeholder="请选择活动时间" bind:tap="onDateBoxShow" />
+        <van-field value="{{ activityFormData.date }}" readonly="{{true}}" label="活动时间" icon="calender-o" placeholder="请选择活动时间" bind:tap="onDateBoxShow" />
       </van-cell-group>
     </view>
   </view>
@@ -41,3 +36,16 @@
 </view>
 <!-- 生成提示 -->
 <van-notify id="create-selector" />
+<view class="swiper-container" wx:if="{{isSwiperShow}}">
+  <swiper indicator-dots="{{indicatorDots}}" circular="false" indicator-dots="{{true}}" indicator-active-color="#a061ff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="changeActivityImg">
+    <block wx:for="{{imgUrls}}" wx:key="item">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="decide-container">
+    <view class="cancel-btn btn" bind:tap="cancelEvent">取消</view>
+    <view class="confirm-btn btn" bind:tap="comfirmEvent">确认</view>
+  </view>
+</view>

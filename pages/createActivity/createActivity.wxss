@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15rpx 30rpx;
+  height: 30rpx;
 }
 
 .createActivityPage__container .tip-voice {
@@ -21,19 +22,32 @@
   color: #727272;
 }
 
-.createActivityPage__container .swiper-container {
+.createActivityPage__container .preview-container {
+  position: relative;
   width: 100%;
-  height: 380rpx;
+  height: 400rpx;
 }
 
-.createActivityPage__container swiper {
+.createActivityPage__container .preview-container .preview {
   width: 100%;
   height: 100%;
 }
 
-.createActivityPage__container .slide-image {
-  width: 100%;
-  height: 100%;
+.createActivityPage__container .preview-container .preview-change-btn {
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+  padding: 10rpx 30rpx;
+  border: 1px solid #d2d2d2;
+  height: 35rpx;
+  line-height: 35rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #d2d2d2;
+}
+
+.createActivityPage__container .preview-container .preview-change-btn:active {
+  opacity: .8;
 }
 
 .createActivityPage__container .activity-content--date {
@@ -79,4 +93,60 @@
   -moz-transform: translateY(-2px);
   -ms-transform: translateY(-2px);
   -o-transform: translateY(-2px);
+}
+
+/* 轮播背景选择区域 */
+
+.swiper-container {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .1);
+}
+
+.swiper-container swiper {
+  margin-top: 58rpx;
+  width: 100%;
+  height: 400rpx;
+}
+
+.swiper-container .slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container .decide-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20rpx;
+  width: 100%;
+  height: 120rpx;
+  box-sizing: border-box;
+}
+
+.swiper-container .btn {
+  display: inline-block;
+  border: 4rpx solid #fff;
+  width: 50%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 3rpx;
+  background-color: #a061ff;
+  box-sizing: border-box;
+}
+
+.swiper-container .btn:active {
+  background-color: #7061ff;
+}
+
+.swiper-container .confirm-btn {
+  border-left: none;
 }

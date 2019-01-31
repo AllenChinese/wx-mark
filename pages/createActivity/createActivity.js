@@ -34,7 +34,9 @@ Page({
       address: '',
       date: ''
     },
-    isCreating: false
+    defaultPreview: '../../assets/images/banner/banner4.jpeg',
+    isCreating: false,
+    isSwiperShow: false
   },
 
   /**
@@ -94,12 +96,21 @@ Page({
 
   },
 
+  showPreviewSwiper: function () {
+    this.setData({
+      isSwiperShow: true
+    })
+    this.changeActivityImg()
+  },
+
   /**
    * 改变活动底图
    */
   changeActivityImg: function (event) {
     this.data.activityFormData.previewUrl =
-      this.data.imgUrls[event.detail.current]
+      !event
+        ? this.data.imgUrls[0]
+        : this.data.imgUrls[event.detail.current]
   },
 
   /**
@@ -186,5 +197,25 @@ Page({
       }
     }
     return isNoEmpty
+  },
+
+  /**
+   * 轮播背景区域取消按钮事件
+   */
+  cancelEvent: function () {
+    this.setData({
+      isSwiperShow: false
+    })
+  },
+
+  /**
+   * 轮播背景区域确认按钮事件
+   */
+  comfirmEvent: function () {
+    // 背景图生效
+    this.setData({
+      defaultPreview: this.data.activityFormData.previewUrl || this.imgUrls[0]
+    })
+    this.cancelEvent()
   }
 })
