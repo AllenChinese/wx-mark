@@ -1,0 +1,58 @@
+/* theme normal */
+
+/**
+ * ico #0074ff #ff5066
+ * background #141a33
+ * title #f2f2f2
+ * desc #525252
+ */
+
+#dark_skin.mePage__container {
+  background-color: #141a33;
+}
+
+#dark_skin.mePage__container .mePage_msg--personal {
+  color: #f2f2f2;
+}
+
+#dark_skin.mePage__container .mePage_msg--saying {
+  color: #929292;
+}
+
+#dark_skin.mePage__container .personal_model {
+  color: #0074ff;
+}
+
+#dark_skin.mePage__container .mePage_msg--checkin.active {
+  border-color: #929292;
+  color: #929292;
+}
+
+#dark_skin.mePage__container .icon__all,
+#dark_skin.mePage__container .icon__create,
+#dark_skin.mePage__container .icon__rank {
+  background-color: #0074ff;
+}
+
+#dark_skin.mePage__container .mePage__function-part {
+  box-shadow: none;
+}
+
+#dark_skin.mePage__container .vanCellGrounp {
+  padding: 25rpx 30rpx;
+  color: #f2f2f2;
+  background-color: #141a33;
+}
+
+#dark_skin.mePage__container .mePage__function-item text {
+  color: #f2f2f2;
+}
+
+#dark_skin.mePage__container .mePage__conpany-part {
+  color: #f2f2f2;
+  background-color: #141a33;
+}
+
+#dark_skin.mePage__container .mePage__conpany-part::before {
+  background-color: #f2f2f2;
+}

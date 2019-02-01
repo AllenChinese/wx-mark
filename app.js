@@ -34,6 +34,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    skin: 'normal_skin' // 主题色配置
   }
 })

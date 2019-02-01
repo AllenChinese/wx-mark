@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/createActivity/createActivity",
     "pages/me/me",
+    "pages/createActivity/createActivity",
     "pages/index/index",
     "pages/activity/activity",
     "pages/search/search",

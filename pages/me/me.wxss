@@ -1,6 +1,14 @@
 /* pages/me/me.wxss */
 
-.mePage__container {}
+@import '../../style/common.wxss';
+page,
+.mePage__container {
+  height: 100%;
+}
+
+.mePage__container {
+  /* padding-bottom: 50rpx; */
+}
 
 /* 用户信息 */
 
@@ -97,7 +105,7 @@
   height: 30rpx;
   line-height: 30rpx;
   font-size: 24rpx;
-  color: #525252;
+  color: #727272;
 }
 
 .mePage__function-part {

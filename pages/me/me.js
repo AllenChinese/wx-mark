@@ -1,11 +1,13 @@
 
 // pages/me/me.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    skin: 'normal_skin',
     me: {
       name: '梧桐小七',
       saying: '人生如逆旅，我亦是行人。',
@@ -17,7 +19,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this
+    wx.getStorage({
+      key: 'skin',
+      success: function (res) {
+        that.setData({
+          skin: res.data
+        })
+      }
+    })
   },
 
   /**
@@ -107,6 +117,22 @@ Page({
       fail: function () {
         // 接口调用失败
       }
+    })
+  },
+
+  /**
+   * 主题色切换
+   */
+  themeSelect: function () {
+    console.log(app.globalData)
+    app.globalData.skin = 'dark_skin'
+
+    this.setData({
+      skin: app.globalData.skin
+    })
+    wx.setStorage({
+      key: 'skin',
+      data: app.globalData.skin
     })
   }
 })

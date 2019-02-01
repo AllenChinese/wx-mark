@@ -1,0 +1,46 @@
+/* theme normal */
+
+/**
+ * ico #3e9b73
+ * title #000000
+ * background #f2f2f2
+ * desc #222 #727272 #929292
+ */
+
+/* mePage */
+
+#normal_skin.mePage__container .mePage_msg--personal {
+  color: #727272;
+}
+
+#normal_skin.mePage__container .mePage_msg--saying {
+  color: #929292;
+}
+
+#normal_skin.mePage__container .personal_model {
+  color: #3e9b73;
+}
+
+#normal_skin.mePage__container .mePage_msg--checkin.active {
+  border-color: #929292;
+  color: #929292;
+}
+
+#normal_skin.mePage__container .icon__all,
+#normal_skin.mePage__container .icon__create,
+#normal_skin.mePage__container .icon__rank {
+  background-color: #3e9b73;
+}
+
+#normal_skin.mePage__container .mePage__function-item text {
+  color: #333;
+}
+
+#normal_skin.mePage__container .mePage__conpany-part {
+  color: #929292;
+  background-color: #fff;
+}
+
+#normal_skin.mePage__container .mePage__conpany-part::before {
+  background-color: #929292;
+}
