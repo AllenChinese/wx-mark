@@ -15,7 +15,6 @@
 /* #f15a22 金赤 */
 
 @import './theme/normal.wxss';
-@import './theme/dark.wxss';
 body {
   background-color: #f2f2f2;
 }

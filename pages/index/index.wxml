@@ -1,4 +1,4 @@
-<view class="indexPage__container">
+<view class="indexPage__container {{skin}}">
   <!-- backTop -->
   <c-backTop wx:if="{{isBackTopShow}}" />
   <view class="indexPage__search-container">

@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    skin: 'normal_skin',
     isBackTopShow: false,
     imgUrls: [
       '../../assets/images/banner/banner1.jpeg',
@@ -49,7 +50,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this
+    wx.getStorage({
+      key: 'skin',
+      success: function (res) {
+        that.setData({
+          skin: res.data
+        })
+      }
+    })
   },
 
   /**

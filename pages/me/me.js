@@ -118,21 +118,20 @@ Page({
         // 接口调用失败
       }
     })
-  },
+  }
 
   /**
    * 主题色切换
    */
-  themeSelect: function () {
-    console.log(app.globalData)
-    app.globalData.skin = 'dark_skin'
+  // themeSelect: function () {
+  //   app.globalData.skin = 'dark_skin'
 
-    this.setData({
-      skin: app.globalData.skin
-    })
-    wx.setStorage({
-      key: 'skin',
-      data: app.globalData.skin
-    })
-  }
+  //   this.setData({
+  //     skin: app.globalData.skin
+  //   })
+  //   wx.setStorage({
+  //     key: 'skin',
+  //     data: app.globalData.skin
+  //   })
+  // }
 })

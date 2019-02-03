@@ -9,38 +9,38 @@
 
 /* mePage */
 
-#normal_skin.mePage__container .mePage_msg--personal {
+.normal_skin.mePage__container .mePage_msg--personal {
   color: #727272;
 }
 
-#normal_skin.mePage__container .mePage_msg--saying {
+.normal_skin.mePage__container .mePage_msg--saying {
   color: #929292;
 }
 
-#normal_skin.mePage__container .personal_model {
+.normal_skin.mePage__container .personal_model {
   color: #3e9b73;
 }
 
-#normal_skin.mePage__container .mePage_msg--checkin.active {
+.normal_skin.mePage__container .mePage_msg--checkin.active {
   border-color: #929292;
   color: #929292;
 }
 
-#normal_skin.mePage__container .icon__all,
-#normal_skin.mePage__container .icon__create,
-#normal_skin.mePage__container .icon__rank {
+.normal_skin.mePage__container .icon__all,
+.normal_skin.mePage__container .icon__create,
+.normal_skin.mePage__container .icon__rank {
   background-color: #3e9b73;
 }
 
-#normal_skin.mePage__container .mePage__function-item text {
+.normal_skin.mePage__container .mePage__function-item text {
   color: #333;
 }
 
-#normal_skin.mePage__container .mePage__conpany-part {
+.normal_skin.mePage__container .mePage__conpany-part {
   color: #929292;
   background-color: #fff;
 }
 
-#normal_skin.mePage__container .mePage__conpany-part::before {
+.normal_skin.mePage__container .mePage__conpany-part::before {
   background-color: #929292;
 }

@@ -1,5 +1,5 @@
 <!-- pages/me/me.wxml -->
-<view class="mePage__container" id="{{skin}}">
+<view class="mePage__container {{skin}}">
   <!-- mePage__userMsg -->
   <view class="mePage__userMsg-part">
     <view class="mePage_userMsg-content">
@@ -53,7 +53,7 @@
   <view class="mePage__cell-part">
     <van-cell-group>
       <van-cell custom-class="vanCellGrounp" icon="star-o" title="活动收藏" value="内容" is-link data-url="/pages/collection/collection" bind:tap="goToPage" />
-      <van-cell custom-class="vanCellGrounp" border="{{ false }}" icon="point-gift-o" title="主题切换" value="" border="{{ false }}" is-link="{{ false }}" bind:tap="themeSelect" />
+      <!-- <van-cell custom-class="vanCellGrounp" border="{{ false }}" icon="point-gift-o" title="主题切换" value="" border="{{ false }}" is-link="{{ false }}" bind:tap="themeSelect" /> -->
     </van-cell-group>
     <van-cell-group custom-class="second-cell">
       <van-cell custom-class="vanCellGrounp" value="内容" icon="edit" is-link data-url="/pages/me-questionnaire/me-questionnaire" bind:tap="goToPage">
