@@ -162,7 +162,7 @@ Page({
         text: '请将活动内容填写完整',
         duration: 1000,
         selector: '#create-selector',
-        backgroundColor: '#f15a22'
+        backgroundColor: '#a061ff'
       })
     } else {
       if (!this.data.isCreating) {

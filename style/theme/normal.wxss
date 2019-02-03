@@ -1,7 +1,7 @@
 /* theme normal */
 
 /**
- * ico #3e9b73
+ * ico #3e9b73 a061ff
  * title #000000
  * background #f2f2f2
  * desc #222 #727272 #929292
@@ -18,7 +18,7 @@
 }
 
 .normal_skin.mePage__container .personal_model {
-  color: #3e9b73;
+  color: #ffd700;
 }
 
 .normal_skin.mePage__container .mePage_msg--checkin.active {
@@ -44,3 +44,5 @@
 .normal_skin.mePage__container .mePage__conpany-part::before {
   background-color: #929292;
 }
+
+/* quickItem */

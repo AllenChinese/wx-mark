@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/search/search",
     "pages/me/me",
     "pages/createActivity/createActivity",
-    "pages/index/index",
     "pages/activity/activity",
-    "pages/search/search",
     "pages/city/city",
     "pages/me-question/me-question",
     "pages/me-questionnaire/me-questionnaire",
@@ -41,7 +41,7 @@
         "selectedIconPath": "assets/images/me_active.png"
       }
     ],
-    "selectedColor": "#a061ff"
+    "selectedColor": "#333"
   },
   "debug": true
 }

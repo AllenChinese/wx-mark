@@ -84,7 +84,7 @@
 }
 
 .create-activity-btn-section .create-activity-btn.active {
-  background-color: rgba(160, 97, 255, .85);
+  opacity: .8;
 }
 
 .custom-loading {
@@ -129,11 +129,13 @@
 }
 
 .swiper-container .btn {
+  z-index: 999;
+  position: relative;
   display: inline-block;
   border: 4rpx solid #fff;
   width: 50%;
   height: 80rpx;
-  line-height: 80rpx;
+  line-height: 72rpx;
   text-align: center;
   font-size: 30rpx;
   color: #fff;
@@ -144,7 +146,7 @@
 }
 
 .swiper-container .btn:active {
-  background-color: #7061ff;
+  opacity: .8;
 }
 
 .swiper-container .confirm-btn {

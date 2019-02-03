@@ -94,7 +94,7 @@
   text-align: center;
   font-size: 24rpx;
   color: #fff;
-  background-color: #a061ff;
+  background-color: rgba(0, 0, 0, .3);
   -webkit-border-radius: 8rpx;
   -moz-border-radius: 8rpx;
   -ms-border-radius: 8rpx;
@@ -117,16 +117,4 @@
 
 .hot-search__container .hot-item:nth-of-type(3) .hot-item-num {
   background-color: #fdb933;
-}
-
-.hot-search__container .hot-item:nth-of-type(4) .hot-item-num {
-  background-color: #1aa2fe;
-}
-
-.hot-search__container .hot-item:nth-of-type(5) .hot-item-num {
-  background-color: #a061ff;
-}
-
-.hot-search__container .hot-item:nth-of-type(6) .hot-item-num {
-  background-color: #585eaa;
 }

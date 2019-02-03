@@ -25,20 +25,20 @@
   <view class="quick-container">
     <view class="quick-item" data-title="人气榜" data-type="c_hot" bind:tap="pageToActivityList">
       <view class="quick-item--logo">
-        <van-icon name="hot-o" size="50rpx" />
+        <van-icon name="hot-o" size="50rpx" custom-class="quickItem__ico" />
       </view>
       <view class="quick-item--name">人气榜</view>
     </view>
     <view class="quick-item">
       <view class="quick-item--logo">
-        <van-icon name="calender-o" size="50rpx" />
+        <van-icon name="calender-o" size="50rpx" custom-class="quickItem__ico" />
       </view>
       <view class="quick-item--name">活动日历</view>
     </view>
     <view class="quick-item">
       <navigator url="/pages/collection/collection" hover-class="none">
         <view class="quick-item--logo">
-          <van-icon name="like-o" size="50rpx" />
+          <van-icon name="like-o" size="50rpx" custom-class="quickItem__ico" />
         </view>
         <view class="quick-item--name">收藏</view>
       </navigator>
@@ -46,7 +46,7 @@
     <view class="quick-item">
       <navigator url="/pages/rank/rank" hover-class="none">
         <view class="quick-item--logo">
-          <van-icon name="medel-o" size="50rpx" />
+          <van-icon name="medel-o" size="50rpx" custom-class="quickItem__ico" />
         </view>
         <view class="quick-item--name">好友周榜</view>
       </navigator>

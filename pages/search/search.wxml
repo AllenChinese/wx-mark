@@ -18,7 +18,7 @@
     <view class="title-bar">
       <view>
         <text class="title">热门搜索</text>
-        <van-icon name="hot" custom-class="hot-ico" color="#d93a49" size="16px" />
+        <van-icon name="hot" custom-class="hot-ico" color="#ed1941" size="16px" />
       </view>
       <text class="change-list title">换一批</text>
     </view>
