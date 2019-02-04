@@ -67,8 +67,8 @@
 
 .rank-item--preview image {
   border-radius: 50%;
-  width: 60rpx;
-  height: 60rpx;
+  width: 75rpx;
+  height: 75rpx;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;

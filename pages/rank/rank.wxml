@@ -18,6 +18,6 @@
         <view class="rank-item--point">累计{{item.point}}马克</view>
       </li>
     </ul>
-    <view class="bottom-tips">64位好友</view>
+    <view class="bottom-tips">{{rankList.length}}位好友</view>
   </view>
 </view>

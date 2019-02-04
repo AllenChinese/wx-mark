@@ -41,7 +41,8 @@
         "selectedIconPath": "assets/images/me_active.png"
       }
     ],
-    "selectedColor": "#333"
+    "color": "#929292",
+    "selectedColor": "#929292"
   },
   "debug": true
 }
