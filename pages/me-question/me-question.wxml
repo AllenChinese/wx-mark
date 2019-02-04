@@ -1,11 +1,11 @@
 <view class="meQuestionPage__container">
   <van-cell-group custom-class="vancellgroup">
-    <van-cell custom-class="vancell" title="单元格" label="发动机咖喱回复阿胡椒粉大黄蜂就啊好的风景姐啊点话费姐蝦的肌肤回到家卡号发几大黄蜂姐啊活动经费回到家啊回复加大回复觉得好减肥哈解放后阿交话费加厚尽快发货快" border="{{ false }}" />
-    <van-cell custom-class="vancell" title="单元格" label="发动机咖喱回复阿胡椒粉大黄蜂就啊好的风景姐啊点话费姐蝦的肌肤回到家卡号发几大黄蜂姐啊活动经费回到家啊回复加大回复觉得好减肥哈解放后阿交话费加厚尽快发货快" border="{{ false }}" />
-    <van-cell custom-class="vancell" title="单元格" label="发动机咖喱回复阿胡椒粉大黄蜂就啊好的风景姐啊点话费姐蝦的肌肤回到家卡号发几大黄蜂姐啊活动经费回到家啊回复加大回复觉得好减肥哈解放后阿交话费加厚尽快发货快" border="{{ false }}" />
-    <van-cell custom-class="vancell" title="单元格" label="发动机咖喱回复阿胡椒粉大黄蜂就啊好的风景姐啊点话费姐蝦的肌肤回到家卡号发几大黄蜂姐啊活动经费回到家啊回复加大回复觉得好减肥哈解放后阿交话费加厚尽快发货快" border="{{ false }}" />
-    <van-cell custom-class="vancell" title="单元格" label="发动机咖喱回复阿胡椒粉大黄蜂就啊好的风景姐啊点话费姐蝦的肌肤回到家卡号发几大黄蜂姐啊活动经费回到家啊回复加大回复觉得好减肥哈解放后阿交话费加厚尽快发货快" border="{{ false }}" />
-    <van-cell custom-class="vancell" title="单元格" label="发动机咖喱回复阿胡椒粉大黄蜂就啊好的风景姐啊点话费姐蝦的肌肤回到家卡号发几大黄蜂姐啊活动经费回到家啊回复加大回复觉得好减肥哈解放后阿交话费加厚尽快发货快" border="{{ false }}" />
+    <van-cell custom-class="vancell" title="称号规则" label="Mark 活动小程序中有一套根据积分的称号规则，派对青铜（0～30）、活动白银（31～60）、活动黄金（61～90）、活动钻石（91～120）、活动大师（121～150）、活动王者（151～180）。" border="{{ false }}" />
+    <van-cell custom-class="vancell" title="积分规则" label="Mark 活动的积分比较复杂，在小程序中会有多个活动积分的入口等着你去寻找。" border="{{ false }}" />
+    <van-cell custom-class="vancell" title="编辑活动" label="编辑发起活动是 Mark 的一个核心功能，您可以通过小程序中「发起活动」的入口进行活动编辑，编辑完成后，你可以将活动分享给您的好友，邀请他们加入其中。" border="{{ false }}" />
+    <van-cell custom-class="vancell" title="分享方式" label="活动的分享，限制于微信的生态，现支持分享给好友、好友群聊以及朋友圈。" border="{{ false }}" />
+    <van-cell custom-class="vancell" title="活动是否全部人可见" label="Mark 活动小程序中现在有两种形式的活动，一种是商家的活动，我们后台会不断更新有意思的活动，这些活动是所有用户都能看到的；另一种是您自己发起的活动，这些活动则只有您自己和参与其中的好友可见。" border="{{ false }}" />
+    <van-cell custom-class="vancell" title="没有我住城市的活动" label="受限于活动的地域性，现在小程序中开放的城市只有北京、上海、杭州、深圳、广州、南京，其他的城市也会陆续开发。" border="{{ false }}" />
   </van-cell-group>
   <view class="btn-section">
     <view class="btn" bind:tap="copy">仍有问题？加我微信</view>
