@@ -35,6 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    skin: 'normal_skin' // 主题色配置
+    skin: 'normal_skin', // 主题色配置
+    city: 'china', // 全国
   }
 })

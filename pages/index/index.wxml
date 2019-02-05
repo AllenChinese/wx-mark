@@ -3,7 +3,7 @@
   <c-backTop wx:if="{{isBackTopShow}}" />
   <view class="indexPage__search-container">
     <view class="current-city" bind:tap="pageToCity">
-      <text class="city-name" decode="{{true}}">全国&nbsp;</text>
+      <text class="city-name" decode="{{true}}">{{cityMsg.name}}&nbsp;</text>
       <van-icon custom-class="location-logo" name="arrow-down" size="6px" />
     </view>
     <!-- searchBar -->

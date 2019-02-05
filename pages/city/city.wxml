@@ -4,8 +4,8 @@
       <text>定位城市</text>
     </view>
     <view>
-      <van-button type="default" size="small" custom-class="china-city-btn common-city-btn animated infinite tada">
-        全国
+      <van-button type="default" size="small" data-city="{{cityMsg.sign}}" custom-class="china-city-btn common-city-btn animated infinite tada">
+        {{cityMsg.name || '全国'}}
       </van-button>
     </view>
   </view>
@@ -14,26 +14,8 @@
       <text>热门城市</text>
     </view>
     <view class="hot-city-items">
-      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
-        北京
-      </van-button>
-      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
-        上海
-      </van-button>
-      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
-        广州
-      </van-button>
-      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
-        杭州
-      </van-button>
-      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
-        深圳
-      </van-button>
-      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
-        南京
-      </van-button>
-      <van-button type="default" size="small" custom-class="hot-city-btn common-city-btn">
-        全国
+      <van-button wx:for="{{cityOption}}" wx:key="{{item.id}}" type="default" size="small" data-id="{{item.id}}" data-sign="{{item.sign}}" data-name="{{item.name}}" custom-class="hot-city-btn common-city-btn" bind:tap="selectCity">
+        {{item.name}}
       </van-button>
     </view>
   </view>

@@ -6,6 +6,7 @@ Page({
    */
   data: {
     skin: 'normal_skin',
+    cityMsg: null,
     isBackTopShow: false,
     imgUrls: [
       '../../assets/images/banner/banner1.jpeg',
@@ -59,6 +60,7 @@ Page({
         })
       }
     })
+
   },
 
   /**
@@ -72,9 +74,19 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    let that = this
     wx.setStorage({
       key: 'dataless',
       data: false
+    })
+    wx.getStorage({
+      key: 'cityMsg',
+      success: function (res) {
+        that.setData({
+          cityMsg: res.data
+        })
+        console.log(that.data.cityMsg)
+      }
     })
   },
 
