@@ -29,7 +29,7 @@
       </view>
       <view class="quick-item--name">人气榜</view>
     </view>
-    <view class="quick-item">
+    <view class="quick-item" bind:tap="activityDate">
       <view class="quick-item--logo">
         <van-icon name="calender-o" size="50rpx" custom-class="quickItem__ico" />
       </view>
@@ -61,3 +61,4 @@
   <!-- 全部活动 -->
   <c-list id="allListComponent" />
 </view>
+<van-toast id="van-toast" />

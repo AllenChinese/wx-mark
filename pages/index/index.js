@@ -1,4 +1,5 @@
 // pages/me/me.js
+import Toast from '../../miniprogram_npm/vant-weapp/toast/toast'
 Page({
 
   /**
@@ -210,6 +211,11 @@ Page({
         // 接口调用失败
       }
     })
+  },
 
+  activityDate: function () {
+    Toast({
+      message: '敬请期待',
+    })
   }
 })
