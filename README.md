@@ -20,11 +20,7 @@
 </div>
 
 <div>
-    <img width="180" src="./assets/images/md/wx_p_7.jpeg">
     <img width="180" src="./assets/images/md/wx_p_8.jpeg">
-</div>
-
-<div>
     <img width="180" src="./assets/images/md/wx_p_9.jpeg">
 </div>
 
