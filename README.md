@@ -4,27 +4,27 @@
 
 ## 展示
 
-<div align="center">
+<div>
     <img width="180" src="./assets/images/md/wx_p_1.jpeg">
     <img width="180" src="./assets/images/md/wx_p_2.jpeg">
 </div>
 
-<div align="center">
+<div>
     <img width="180" src="./assets/images/md/wx_p_3.jpeg">
     <img width="180" src="./assets/images/md/wx_p_4.jpeg">
 </div>
 
-<div align="center">
+<div>
     <img width="180" src="./assets/images/md/wx_p_5.jpeg">
     <img width="180" src="./assets/images/md/wx_p_6.jpeg">
 </div>
 
-<div align="center">
+<div>
     <img width="180" src="./assets/images/md/wx_p_7.jpeg">
     <img width="180" src="./assets/images/md/wx_p_8.jpeg">
 </div>
 
-<div align="center">
+<div>
     <img width="180" src="./assets/images/md/wx_p_9.jpeg">
 </div>
 
