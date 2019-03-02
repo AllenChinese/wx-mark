@@ -56,7 +56,7 @@
    - 活动展示、分享、组织
    - 用户基础信息展示、美化
 
-- 中后台管理系统 & 微信自带数据中心 - vue + ElementUI （已创建 https://allenchinese.github.io/icevue/dist/ ）
+- 中后台管理系统 & 微信自带数据中心 - vue + ElementUI （已创建 https://allenchinese.github.io/MarkMiniapp-Data-System/dist/#/ ）
 
   - 用户数据管理
   - 活动爬取管理
