@@ -44,5 +44,6 @@
     "color": "#929292",
     "selectedColor": "#929292"
   },
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }

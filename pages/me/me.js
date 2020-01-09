@@ -1,8 +1,6 @@
-
 // pages/me/me.js
 var app = getApp();
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -77,6 +75,22 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 验证 token
+  */
+  onVerifyToken: function () {
+    wx.request({
+      url: 'http://localhost:3001/v1/token/verify',
+      method: 'POST',
+      data: {
+        token: wx.getStorageSync('token')
+      },
+      success: (res) => {
+        console.log(res)
+      }
+    })
   },
 
   /**

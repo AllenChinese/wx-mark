@@ -1,15 +1,21 @@
 // app.js
+import regeneratorRuntime from './libs/regenerator-runtime/runtime-module'
+import { onGetToken } from './http/apis/common'
 App({
-  onlaunch: function () {
-    // 展示本地缓存能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
+  onLaunch: function () {
+    this.setLogSync()
     // 登录
     wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openid, sessionKey, unionId
+      success: async (res) => {
+        if (res.code) {
+          let onGetTokenRes = await onGetToken({
+            account: res.code,
+            type: 100
+          })
+          if (onGetTokenRes.success) {
+            wx.setStorageSync('token', onGetTokenRes.data.token)
+          }
+        }
       }
     })
 
@@ -33,9 +39,15 @@ App({
       }
     })
   },
+  setLogSync: function () {
+    // 展示本地缓存能力
+    var logs = wx.getStorageSync('logs') || []
+    logs.unshift(Date.now())
+    wx.setStorageSync('logs', logs)
+  },
   globalData: {
     userInfo: null,
     skin: 'normal_skin', // 主题色配置
-    city: 'china', // 全国
+    city: 'china' // 全国
   }
 })
