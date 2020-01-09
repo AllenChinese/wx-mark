@@ -5,12 +5,12 @@
     <view class="mePage_userMsg-content">
       <van-row>
         <van-col span="6">
-          <image class="mePage__person-img" mode src="../../assets/images/cat.jpeg"></image>
+          <image class="mePage__person-img" mode src="{{me.avatarUrl}}"></image>
         </van-col>
         <van-col span="12">
           <view class="mePage_msg">
             <view class="mePage_msg--personal">
-              <text class="personal_name">{{me.name}}</text>
+              <text class="personal_name">{{me.nickName}}</text>
               <van-icon custom-class="personal_model" size="24rpx" name="medel-o" />
             </view>
             <view class="mePage_msg--saying">

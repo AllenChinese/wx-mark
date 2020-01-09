@@ -1,0 +1,1 @@
+import wxRequest from '../wxRequest'
